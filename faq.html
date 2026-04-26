@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lawn Game Rental FAQ | Legendary Lawn Games</title>
+  <meta name="description" content="Giant game rental questions answered — booking, pricing, delivery, setup, rain policies & LED games. Everything you need to know before you rent!">
+  <link rel="canonical" href="https://www.legendarylawngames.com/faq.html">
+  <meta property="og:title" content="Lawn Game Rental FAQ | Legendary Lawn Games">
+  <meta property="og:description" content="Giant game rental questions answered — booking, pricing, delivery, setup, rain policies & LED games. Everything you need to know before you rent!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.legendarylawngames.com/faq.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================
+       CSS CUSTOM PROPERTIES — Golden Hour Theme
+       ============================================ */
+    :root {
+      --gold: #D4A843;
+      --gold-light: #E8C96A;
+      --gold-dark: #B8912E;
+      --charcoal: #2D2D2D;
+      --charcoal-light: #3D3D3D;
+      --cream: #FFF8E7;
+      --cream-dark: #F5EDD6;
+      --sage: #8FA87A;
+      --sage-dark: #6E8A5C;
+      --white: #FFFFFF;
+      --text: #2D2D2D;
+      --text-light: #6B6B6B;
+      --text-on-dark: #F5EDD6;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+      --shadow-lg: 0 8px 40px rgba(0,0,0,0.16);
+      --shadow-gold: 0 4px 20px rgba(212,168,67,0.3);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 32px;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --nav-height: 72px;
+      --section-padding: 100px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body); color: var(--text); background: var(--white);
+      line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.2; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px; }
+    h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+    .section-subtitle { font-size: 1.1rem; color: var(--text-light); max-width: 600px; margin: 0 auto 48px; }
+    .gold { color: var(--gold); }
+    .text-center { text-align: center; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 14px 32px; border-radius: 50px; font-family: var(--font-body);
+      font-weight: 600; font-size: 1rem; cursor: pointer; border: 2px solid transparent;
+      transition: all 0.3s ease; white-space: nowrap;
+    }
+    .btn-primary { background: var(--gold); color: var(--charcoal); border-color: var(--gold); }
+    .btn-primary:hover { background: var(--gold-dark); border-color: var(--gold-dark); transform: translateY(-2px); box-shadow: var(--shadow-gold); }
+    .btn-outline { background: transparent; color: var(--charcoal); border-color: var(--charcoal); }
+    .btn-outline:hover { background: var(--charcoal); color: var(--white); transform: translateY(-2px); }
+    .btn-large { padding: 18px 48px; font-size: 1.1rem; }
+
+    /* ============================================
+       NAVBAR (scrolled state for subpages)
+       ============================================ */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; height: var(--nav-height);
+      z-index: 1000; background: rgba(255,255,255,0.97); backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-sm); transition: all 0.3s ease;
+    }
+    .nav-inner {
+      max-width: 1300px; margin: 0 auto; padding: 0 24px; height: 100%;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-icon {
+      width: 40px; height: 40px; background: var(--gold); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; font-weight: 800; color: var(--charcoal); font-family: var(--font-display);
+    }
+    .logo-text { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: var(--charcoal); }
+    .logo-text span { color: var(--gold); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-link { font-size: 0.9rem; font-weight: 500; color: var(--charcoal); transition: color 0.3s; position: relative; }
+    .nav-link:hover { color: var(--gold); }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--gold); transition: width 0.3s; }
+    .nav-link:hover::after { width: 100%; }
+    .nav-link.active { color: var(--gold-dark); }
+    .nav-link.active::after { width: 100%; }
+    .nav-book {
+      padding: 10px 24px; border-radius: 50px; font-weight: 600; font-size: 0.9rem;
+      background: var(--gold); color: var(--charcoal); border: 2px solid var(--gold);
+      transition: all 0.3s; cursor: pointer; font-family: var(--font-body);
+    }
+    .nav-book:hover { background: var(--gold-dark); border-color: var(--gold-dark); }
+    .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .mobile-toggle span { display: block; width: 24px; height: 2px; background: var(--charcoal); margin: 6px 0; transition: all 0.3s; }
+
+    .mobile-menu {
+      position: fixed; inset: 0; background: var(--charcoal); z-index: 999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
+      opacity: 0; visibility: hidden; transition: all 0.3s;
+    }
+    .mobile-menu.open { opacity: 1; visibility: visible; }
+    .mobile-menu a { color: var(--white); font-size: 1.5rem; font-family: var(--font-display); font-weight: 600; transition: color 0.3s; }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-close { position: absolute; top: 24px; right: 24px; background: none; border: none; color: var(--white); font-size: 2rem; cursor: pointer; }
+
+    /* ============================================
+       HERO (short)
+       ============================================ */
+    .hero-short {
+      position: relative; min-height: 40vh; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); overflow: hidden;
+    }
+    .hero-short .hero-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 20% 50%, rgba(212,168,67,0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(143,168,122,0.1) 0%, transparent 50%),
+        linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+    }
+    .hero-short .hero-shapes { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .hero-shape { position: absolute; border-radius: 50%; opacity: 0.06; animation: float 20s ease-in-out infinite; }
+    .hero-shape:nth-child(1) { width: 400px; height: 400px; background: var(--gold); top: -10%; right: -5%; }
+    .hero-shape:nth-child(2) { width: 300px; height: 300px; background: var(--sage); bottom: -5%; left: -5%; animation-delay: -7s; }
+    .hero-shape:nth-child(3) { width: 200px; height: 200px; background: var(--gold-light); top: 40%; left: 20%; animation-delay: -14s; }
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(30px, -30px) scale(1.05); }
+      50% { transform: translate(-20px, 20px) scale(0.95); }
+      75% { transform: translate(15px, 10px) scale(1.02); }
+    }
+    .hero-short .hero-content {
+      position: relative; z-index: 2; text-align: center;
+      padding: calc(var(--nav-height) + 40px) 24px 60px; max-width: 800px;
+    }
+    .hero-short h1 { color: var(--white); margin-bottom: 16px; animation: fadeInUp 0.8s ease 0.1s both; }
+    .hero-short .hero-tagline {
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem); color: rgba(255,255,255,0.7);
+      max-width: 600px; margin: 0 auto; animation: fadeInUp 0.8s ease 0.2s both;
+    }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* ============================================
+       FAQ SECTIONS
+       ============================================ */
+    .faq-page {
+      padding: var(--section-padding) 0; background: var(--white);
+    }
+    .faq-page:nth-child(even) { background: var(--cream); }
+
+    .faq-category {
+      max-width: 800px; margin: 0 auto;
+    }
+    .faq-category-title {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 32px;
+    }
+    .faq-category-icon {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; flex-shrink: 0;
+    }
+    .faq-category-title h2 { margin-bottom: 0; font-size: clamp(1.5rem, 3vw, 2rem); }
+
+    .faq-grid { max-width: 800px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid rgba(0,0,0,0.08); }
+    .faq-question {
+      width: 100%; background: none; border: none; padding: 20px 0; text-align: left;
+      cursor: pointer; font-family: var(--font-body); font-size: 1.05rem; font-weight: 600;
+      color: var(--charcoal); display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    }
+    .faq-question:hover { color: var(--gold-dark); }
+    .faq-toggle {
+      width: 28px; height: 28px; border-radius: 50%; background: var(--cream-dark);
+      display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+      flex-shrink: 0; transition: all 0.3s;
+    }
+    .faq-item.open .faq-toggle { background: var(--gold); color: var(--white); transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease; }
+    .faq-item.open .faq-answer { max-height: 400px; padding-bottom: 20px; }
+    .faq-answer p { color: var(--text-light); font-size: 0.95rem; line-height: 1.7; }
+
+    /* ============================================
+       STILL HAVE QUESTIONS CTA
+       ============================================ */
+    .contact-cta {
+      padding: var(--section-padding) 0; background: var(--charcoal); text-align: center;
+    }
+    .contact-cta h2 { color: var(--white); margin-bottom: 16px; }
+    .contact-cta .section-subtitle { color: rgba(255,255,255,0.6); margin-bottom: 40px; }
+    .contact-cards {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+      max-width: 600px; margin: 0 auto;
+    }
+    .contact-card-dark {
+      padding: 32px 24px; border-radius: var(--radius-lg);
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.3s; text-align: center;
+    }
+    .contact-card-dark:hover { border-color: var(--gold); background: rgba(255,255,255,0.1); }
+    .contact-card-dark .contact-icon { font-size: 2rem; margin-bottom: 12px; }
+    .contact-card-dark h3 { color: var(--white); font-size: 1.1rem; margin-bottom: 8px; }
+    .contact-card-dark a { color: var(--gold); font-weight: 600; font-size: 1rem; transition: color 0.3s; }
+    .contact-card-dark a:hover { color: var(--gold-light); }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .site-footer { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 80px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 60px; }
+    .footer-brand p { margin-top: 12px; font-size: 0.9rem; max-width: 280px; line-height: 1.6; }
+    .footer-shield { width: 160px; margin-bottom: 16px; }
+    .footer-shield svg { width: 100%; height: auto; }
+    .footer-social { display: flex; gap: 12px; margin-top: 20px; }
+    .footer-social a {
+      width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.08);
+      display: flex; align-items: center; justify-content: center; font-size: 0.8rem;
+      font-weight: 700; color: rgba(255,255,255,0.6); transition: all 0.3s;
+    }
+    .footer-social a:hover { background: var(--gold); color: var(--charcoal); }
+    .footer-col h4 {
+      color: var(--white); font-family: var(--font-body); font-size: 0.85rem;
+      font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 20px;
+    }
+    .footer-col a { display: block; padding: 4px 0; font-size: 0.9rem; color: rgba(255,255,255,0.6); transition: color 0.3s; }
+    .footer-col a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem;
+    }
+    .footer-legal { display: flex; gap: 24px; }
+    .footer-legal a { color: rgba(255,255,255,0.4); transition: color 0.3s; }
+    .footer-legal a:hover { color: var(--gold); }
+
+    /* Scroll Animations */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 1024px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      :root { --section-padding: 64px; --nav-height: 64px; }
+      .nav-links, .nav-book { display: none; }
+      .mobile-toggle { display: block; }
+      .contact-cards { grid-template-columns: 1fr; max-width: 300px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+      .footer-brand p { margin-left: auto; margin-right: auto; }
+      .footer-social { justify-content: center; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .faq-category-title { justify-content: center; }
+    }
+    @media (max-width: 480px) {
+      .hero-short h1 { font-size: 2.2rem; }
+      .faq-question { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">L</div>
+        <div class="logo-text">Legendary <span>Lawn Games</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#games" class="nav-link">Games</a></li>
+        <li><a href="index.html#packages" class="nav-link">Packages</a></li>
+        <li><a href="index.html#locations" class="nav-link">Locations</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+      </ul>
+      <a href="index.html#book" class="nav-book">Book Now</a>
+      <button class="mobile-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="closeMobileMenu()">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="index.html#games" onclick="closeMobileMenu()">Games</a>
+    <a href="index.html#packages" onclick="closeMobileMenu()">Packages</a>
+    <a href="gallery.html" onclick="closeMobileMenu()">Gallery</a>
+    <a href="about.html" onclick="closeMobileMenu()">About</a>
+    <a href="faq.html" onclick="closeMobileMenu()">FAQ</a>
+    <a href="index.html#book" class="btn btn-primary" onclick="closeMobileMenu()">Book Now</a>
+  </div>
+
+  <!-- ====== HERO (short) ====== -->
+  <section class="hero-short">
+    <div class="hero-bg"></div>
+    <div class="hero-shapes">
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Frequently Asked <span class="gold">Questions</span></h1>
+      <p class="hero-tagline">Everything you need to know about renting lawn games</p>
+    </div>
+  </section>
+
+  <!-- ====== BOOKING & PRICING ====== -->
+  <section class="faq-page">
+    <div class="container">
+      <div class="faq-category">
+        <div class="faq-category-title reveal">
+          <div class="faq-category-icon">&#128179;</div>
+          <h2>Booking & Pricing</h2>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How do I book?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Booking is easy and takes under 2 minutes. Just select your location, event date, and the games or package you want on our website. You'll receive an instant confirmation email with all the details. You can also call us at (800) 555-GAME or email hello@legendarylawngames.com to book over the phone.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How far in advance should I book?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We recommend booking 2-4 weeks in advance, especially for weekends during peak season (April-October). However, we often have same-week and even next-day availability. Check our online calendar for real-time availability. For weddings and large corporate events, booking 4-8 weeks ahead is a good idea to guarantee your preferred package.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What's your cancellation policy?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>You can cancel or reschedule for free up to 48 hours before your event. Cancellations within 48 hours are subject to a 50% fee of the total rental cost. Weather-related cancellations can always be rescheduled for free, regardless of timing — we understand you can't control the forecast.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you require a deposit?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we require a 50% deposit at the time of booking to secure your date. The remaining balance is due at delivery. We also place a $200 pre-authorization hold on your card for potential damages — this is NOT charged unless significant damage occurs. The hold is released automatically after your rental.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Are prices different by location?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, pricing varies slightly by market to reflect local costs. Orange County is our Tier 1 market (highest pricing), Las Vegas and Austin are Tier 2, and Dallas-Fort Worth and Cincinnati are Tier 3 (most affordable). For example, the Legend Package ranges from $249 in DFW/Cincinnati to $399 in Orange County. Select your location on our site to see exact pricing for your area.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you offer package discounts?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. Our packages (Starter, Classic, Legend, and Glow) are already discounted 15-25% compared to renting those same games individually. We also offer 10% off for repeat customers, and corporate clients who book quarterly or more can set up a standing account with preferred pricing. Ask us about multi-event discounts when you book.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DELIVERY & SETUP ====== -->
+  <section class="faq-page">
+    <div class="container">
+      <div class="faq-category">
+        <div class="faq-category-title reveal">
+          <div class="faq-category-icon">&#128666;</div>
+          <h2>Delivery & Setup</h2>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How does delivery and setup work?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We deliver all games to your event location, set everything up, and pick it all up when your event ends. Our team arrives 1-2 hours before your event starts, sets up all games in your preferred layout, and returns at the agreed-upon time for pickup. You don't touch a thing — we handle it all.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Is delivery free?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Delivery, setup, and pickup are all included free within our standard service area — a 20-mile radius from each metro center. Beyond that, a small mileage fee of $2/mile applies. We'll let you know at booking if your address falls outside the free delivery zone.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What's your delivery radius?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Our standard free delivery radius is 20 miles from each metro center. We can deliver up to 50 miles for an additional mileage fee. In Orange County, that covers everywhere from San Clemente to Long Beach. In DFW, we cover from Denton to Waxahachie. Contact us if your venue is outside these areas — we'll work something out.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How early do you deliver before the event?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We typically arrive 1-2 hours before your event starts. Setup takes about 15-30 minutes depending on the number of games. We'll confirm the exact delivery time when you book, and you can adjust it based on your venue's setup requirements. For weddings at specific venues, we coordinate directly with venue coordinators.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What if my venue has delivery restrictions?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No problem — we deal with this regularly. Many venues, parks, and HOA spaces have specific delivery windows, loading dock requirements, or restricted access areas. Just let us know your venue details when you book and we'll coordinate accordingly. We've delivered to hundreds of venues across all our markets and know many of them well.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GAMES & EQUIPMENT ====== -->
+  <section class="faq-page">
+    <div class="container">
+      <div class="faq-category">
+        <div class="faq-category-title reveal">
+          <div class="faq-category-icon">&#129521;</div>
+          <h2>Games & Equipment</h2>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What games do you offer?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We offer 20+ giant games including Giant Jenga, Cornhole, Giant Connect Four, Yard Pong, Bocce Ball, Yardzee, Giant Chess, Giant Tic-Tac-Toe, Ladder Toss, Ring Toss, Croquet, Spikeball, and LED versions of many games for evening events. Browse our full catalog on the Games page, or check out our curated packages (Starter, Classic, Legend, and Glow).</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What condition are the games in?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Premium condition, always. Every game in our fleet is inspected, cleaned, and maintained after every single rental. Wooden games like Giant Jenga are sanded and re-stained regularly. Cornhole boards are wiped down and bag fills are checked. If any piece doesn't meet our standards, it gets replaced before your event. This isn't bargain bin equipment — our games look and play like new.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How much space do I need?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Each game needs roughly a 10x10 ft area, including space for players. A 3-game Starter Package needs about 20x15 ft. A 5-game Classic Package works well in 30x20 ft. The full 8-game Legend Package is ideal with 40x30 ft or more. When you book, tell us about your space and we'll help you plan the perfect layout — we do this every day.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can I get custom branded cornhole boards?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Custom cornhole boards are one of our most popular add-ons, especially for corporate events and weddings. Add your company logo, wedding monogram, or any design for an additional $100-200. We need at least 2 weeks of lead time for custom boards. Some corporate clients keep their branded boards on file for recurring events.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you have LED/glow games for evening events?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely — our Glow Package is one of our most popular options. It includes 5 LED-powered games: LED Giant Jenga, LED Cornhole, LED Ring Toss, LED Yard Pong, and LED Giant Dice. They're vibrant, colorful, and look incredible at night. Starting at $229. You can also add individual LED games to any other package for a custom evening setup.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DURING YOUR EVENT ====== -->
+  <section class="faq-page">
+    <div class="container">
+      <div class="faq-category">
+        <div class="faq-category-title reveal">
+          <div class="faq-category-icon">&#127881;</div>
+          <h2>During Your Event</h2>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What if it rains?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No stress! You can reschedule for free up to 24 hours before your event. If rain pops up unexpectedly day-of, we'll work with you to find the next available date at no additional cost. Many of our games also work great under covered patios and pavilions. If your venue has indoor space or a tent, we can set up there instead.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What if a game gets damaged?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Normal wear and tear is completely expected — don't worry about it. That's why we maintain and refurbish games regularly. For significant damage (broken pieces, deep stains, etc.), we hold a $200 pre-authorization on your card at booking. This is NOT charged unless damage occurs. If it does, we only charge the actual repair or replacement cost, which is usually well under $200.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do we need to supervise the games?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Not at all. Our games are designed to be self-service — guests can pick up and play without instructions. Each game comes with a simple rules card, and most are intuitive enough that people just start playing. The games are built tough and can handle enthusiastic players of all ages. Just set them loose and let the fun happen.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can you provide a game attendant?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! For an additional $150, we can provide a dedicated game attendant who stays at your event to organize tournaments, explain rules, keep games tidy, and keep the energy going. This is popular for corporate team-building events and larger parties (100+ guests). The attendant can also run structured competitions with brackets and scorekeeping if you'd like.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== AFTER YOUR EVENT ====== -->
+  <section class="faq-page">
+    <div class="container">
+      <div class="faq-category">
+        <div class="faq-category-title reveal">
+          <div class="faq-category-icon">&#9989;</div>
+          <h2>After Your Event</h2>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>When do you pick up the games?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We pick up at the time agreed upon when you booked — typically within 30-60 minutes after your event ends. If your event runs late or you need us to come back the next morning, just give us a call and we'll adjust. For weekend events, next-morning pickups are often the easiest option and there's no extra charge for that.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What if we need the games longer?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Standard rentals are for one event day (up to 8 hours). If you need the games for a multi-day event, a full weekend, or even a week-long corporate retreat, we offer extended rental rates at a significant discount. A second day is typically 50% of the original price. Just let us know when you book and we'll quote you a package rate.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How do I leave a review?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We'd love to hear from you! After your event, you'll receive a follow-up email with links to leave a review on Google and Yelp. You can also tag us on Instagram or TikTok @LegendaryLawnGames — we love seeing your event photos and videos. We feature our favorite customer content on our social media and gallery page (with your permission, of course).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== STILL HAVE QUESTIONS ====== -->
+  <section class="contact-cta">
+    <div class="container">
+      <h2 class="reveal">Still Have <span class="gold">Questions</span>?</h2>
+      <p class="section-subtitle reveal">We're here to help. Reach out anytime.</p>
+      <div class="contact-cards">
+        <div class="contact-card-dark reveal">
+          <div class="contact-icon">&#128231;</div>
+          <h3>Email Us</h3>
+          <a href="mailto:hello@legendarylawngames.com">hello@legendarylawngames.com</a>
+        </div>
+        <div class="contact-card-dark reveal">
+          <div class="contact-icon">&#128222;</div>
+          <h3>Call Us</h3>
+          <a href="tel:+18005551234">(800) 555-GAME</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-shield">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 520">
+              <defs>
+                <linearGradient id="ft-lg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#F5E8B0"/>
+                  <stop offset="40%" stop-color="#D4A843"/>
+                  <stop offset="100%" stop-color="#8B6914"/>
+                </linearGradient>
+              </defs>
+              <path d="M 40,16 L 460,16 L 460,270 C 460,400 250,510 250,510 C 250,510 40,400 40,270 Z" fill="#0e0c0a" stroke="url(#ft-lg)" stroke-width="4"/>
+              <text x="250" y="72" text-anchor="middle" font-family="'Cinzel',serif" font-weight="700" font-size="36" fill="url(#ft-lg)" letter-spacing="6">LEGENDARY</text>
+              <line x1="80" y1="88" x2="200" y2="88" stroke="#D4A843" stroke-width="0.6" opacity="0.25"/>
+              <line x1="300" y1="88" x2="420" y2="88" stroke="#D4A843" stroke-width="0.6" opacity="0.25"/>
+              <polygon points="250,84 254,88 250,92 246,88" fill="#D4A843" opacity="0.4"/>
+              <g transform="translate(175, 100)">
+                <rect x="8" y="246" width="134" height="26" rx="4" fill="#D4A843" opacity="0.9"/>
+                <rect x="12" y="218" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.85"/>
+                <rect x="6" y="190" width="134" height="26" rx="4" fill="#D4A843" opacity="0.9"/>
+                <rect x="14" y="162" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.8" transform="rotate(1.5, 81, 175)"/>
+                <rect x="4" y="134" width="134" height="26" rx="4" fill="#D4A843" opacity="0.85" transform="rotate(-2, 71, 147)"/>
+                <rect x="10" y="106" width="134" height="26" rx="4" fill="#D4A843" opacity="0.12" stroke="#D4A843" stroke-width="1" stroke-dasharray="6,5" opacity="0.3"/>
+                <rect x="16" y="78" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.7" transform="rotate(3, 83, 91)"/>
+                <rect x="4" y="50" width="134" height="26" rx="4" fill="#D4A843" opacity="0.65" transform="rotate(-2.5, 71, 63)"/>
+                <rect x="18" y="22" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.55" transform="rotate(4, 85, 35)"/>
+                <rect x="8" y="-6" width="134" height="26" rx="4" fill="#D4A843" opacity="0.45" transform="rotate(-5, 75, 7)"/>
+                <g transform="translate(120, 108) rotate(-7, 0, 12)">
+                  <rect x="0" y="0" width="88" height="22" rx="4" fill="#F5E8B0" opacity="0.75"/>
+                </g>
+              </g>
+              <text x="250" y="432" text-anchor="middle" font-family="'Cinzel',serif" font-weight="500" font-size="20" fill="#D4A843" letter-spacing="8" opacity="0.65">LAWN GAMES</text>
+            </svg>
+          </div>
+          <p>Make your game legendary. Premium giant lawn game rentals delivered to your event in Orange County, DFW & Las Vegas.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="TikTok">TK</a>
+            <a href="#" aria-label="Pinterest">PN</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Games</h4>
+          <a href="index.html#games">All Games</a>
+          <a href="index.html#packages">Packages</a>
+          <a href="index.html#packages">Custom Packages</a>
+          <a href="index.html#packages">LED / Glow Games</a>
+        </div>
+        <div class="footer-col">
+          <h4>Locations</h4>
+          <a href="index.html#locations">Orange County, CA</a>
+          <a href="index.html#locations">Dallas-Fort Worth, TX</a>
+          <a href="index.html#locations">Las Vegas, NV</a>
+          <a href="index.html#locations">Austin, TX</a>
+          <a href="index.html#locations">Cincinnati, OH</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="faq.html">FAQ</a>
+          <a href="index.html#contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Legendary Lawn Games. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Rental Agreement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---- Mobile menu ----
+    function openMobileMenu() {
+      document.getElementById('mobileMenu').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // ---- FAQ accordion ----
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      // Close all in the same section
+      const section = item.closest('.faq-grid');
+      section.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      // Toggle clicked
+      if (!wasOpen) item.classList.add('open');
+    }
+
+    // ---- Scroll reveal animations ----
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>

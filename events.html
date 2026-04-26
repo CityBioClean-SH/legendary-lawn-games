@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Game Rentals | Legendary Lawn Games</title>
+  <meta name="description" content="Lawn games for parties and events — festivals, reunions, block parties & more. Packages from $159 with free delivery and setup. Book your event now!">
+  <link rel="canonical" href="https://www.legendarylawngames.com/events.html">
+  <meta property="og:title" content="Event Game Rentals | Legendary Lawn Games">
+  <meta property="og:description" content="Lawn games for parties and events — festivals, reunions, block parties & more. Packages from $159 with free delivery and setup. Book your event now!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.legendarylawngames.com/events.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================
+       CSS CUSTOM PROPERTIES — Energetic Events
+       ============================================ */
+    :root {
+      --gold: #D4A843;
+      --gold-light: #E8C96A;
+      --gold-dark: #B8912E;
+      --charcoal: #2D2D2D;
+      --charcoal-light: #3D3D3D;
+      --cream: #FFF8E7;
+      --cream-dark: #F5EDD6;
+      --sage: #8FA87A;
+      --sage-dark: #6E8A5C;
+      --white: #FFFFFF;
+      --text: #2D2D2D;
+      --text-light: #6B6B6B;
+      --text-on-dark: #F5EDD6;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+      --shadow-lg: 0 8px 40px rgba(0,0,0,0.16);
+      --shadow-gold: 0 4px 20px rgba(212,168,67,0.3);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 32px;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --nav-height: 72px;
+      --section-padding: 100px;
+
+      /* Event type accent colors */
+      --brewery: #8FA87A;
+      --brewery-dark: #6E8A5C;
+      --reunion: #4CAF50;
+      --reunion-dark: #388E3C;
+      --school: #FF9800;
+      --school-dark: #F57C00;
+      --festival: #7E57C2;
+      --festival-dark: #5C35A3;
+      --hoa: #00897B;
+      --hoa-dark: #00695C;
+    }
+
+    /* ============================================
+       RESET & BASE
+       ============================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ============================================
+       TYPOGRAPHY
+       ============================================ */
+    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.2; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px; }
+    h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto 48px;
+    }
+
+    .gold { color: var(--gold); }
+    .text-center { text-align: center; }
+
+    /* ============================================
+       BUTTONS
+       ============================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: var(--charcoal);
+      border-color: var(--gold);
+    }
+    .btn-primary:hover {
+      background: var(--gold-dark);
+      border-color: var(--gold-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--charcoal);
+      border-color: var(--charcoal);
+    }
+    .btn-outline:hover {
+      background: var(--charcoal);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+    .btn-outline-light {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255,255,255,0.6);
+    }
+    .btn-outline-light:hover {
+      background: rgba(255,255,255,0.15);
+      color: var(--white);
+    }
+    .btn-large { padding: 18px 48px; font-size: 1.1rem; }
+    .btn-event {
+      padding: 14px 36px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .btn-event:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    /* ============================================
+       NAVBAR
+       ============================================ */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--nav-height);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    .navbar.transparent { background: transparent; }
+    .navbar.scrolled {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-sm);
+    }
+    .navbar.scrolled .nav-link { color: var(--charcoal); }
+    .navbar.scrolled .logo-text { color: var(--charcoal); }
+    .navbar.scrolled .nav-cta { background: var(--gold); color: var(--charcoal); border-color: var(--gold); }
+
+    .nav-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gold);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--charcoal);
+      font-family: var(--font-display);
+    }
+    .logo-text {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--white);
+      transition: color 0.3s;
+    }
+    .logo-text span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--white);
+      transition: color 0.3s;
+      position: relative;
+    }
+    .nav-link:hover { color: var(--gold); }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: width 0.3s;
+    }
+    .nav-link:hover::after { width: 100%; }
+
+    .nav-cta {
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+      transition: all 0.3s;
+      cursor: pointer;
+      font-family: var(--font-body);
+    }
+    .nav-cta:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--charcoal);
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+    .mobile-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      margin: 6px 0;
+      transition: all 0.3s;
+    }
+    .navbar.scrolled .mobile-toggle span { background: var(--charcoal); }
+
+    /* ============================================
+       MOBILE MENU OVERLAY
+       ============================================ */
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      background: var(--charcoal);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+    }
+    .mobile-menu.open { opacity: 1; visibility: visible; }
+    .mobile-menu a {
+      color: var(--white);
+      font-size: 1.5rem;
+      font-family: var(--font-display);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    /* ============================================
+       HERO — ENERGETIC GRADIENT
+       ============================================ */
+    .hero {
+      position: relative;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 30%, rgba(143,168,122,0.25) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 60%, rgba(0,137,123,0.2) 0%, transparent 45%),
+        radial-gradient(ellipse at 50% 80%, rgba(255,152,0,0.15) 0%, transparent 40%),
+        linear-gradient(150deg, #2D4A22 0%, #1B6B5A 25%, #D4A843 50%, #E07020 75%, #5C35A3 100%);
+    }
+
+    .hero-shapes {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .hero-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.07;
+      animation: float 20s ease-in-out infinite;
+    }
+    .hero-shape:nth-child(1) {
+      width: 400px; height: 400px;
+      background: var(--gold-light);
+      top: -15%; right: -5%;
+      animation-delay: 0s;
+    }
+    .hero-shape:nth-child(2) {
+      width: 300px; height: 300px;
+      background: #26C6DA;
+      bottom: -10%; left: -5%;
+      animation-delay: -7s;
+    }
+    .hero-shape:nth-child(3) {
+      width: 200px; height: 200px;
+      background: #FF9800;
+      top: 40%; left: 30%;
+      animation-delay: -14s;
+    }
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(30px, -30px) scale(1.05); }
+      50% { transform: translate(-20px, 20px) scale(0.95); }
+      75% { transform: translate(15px, 10px) scale(1.02); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: calc(var(--nav-height) + 40px) 24px 60px;
+      max-width: 850px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: var(--cream);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+      animation: fadeInDown 0.8s ease;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 {
+      color: var(--white);
+      margin-bottom: 20px;
+      animation: fadeInUp 0.8s ease 0.1s both;
+    }
+
+    .hero-tagline {
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      color: rgba(255,255,255,0.8);
+      max-width: 600px;
+      margin: 0 auto 40px;
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.8s ease 0.3s both;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ============================================
+       QUICK LINKS
+       ============================================ */
+    .quick-links {
+      padding: 40px 0;
+      background: var(--white);
+      border-bottom: 1px solid #eee;
+    }
+    .quick-links-inner {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .quick-links-label {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      font-weight: 500;
+      margin-right: 8px;
+    }
+    .quick-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border: 2px solid #ddd;
+      color: var(--text);
+      transition: all 0.3s;
+      background: var(--white);
+    }
+    .quick-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+    .quick-pill.brewery { border-color: var(--brewery); color: var(--brewery-dark); }
+    .quick-pill.brewery:hover { background: var(--brewery); color: var(--white); }
+    .quick-pill.reunion { border-color: var(--reunion); color: var(--reunion-dark); }
+    .quick-pill.reunion:hover { background: var(--reunion); color: var(--white); }
+    .quick-pill.school { border-color: var(--school); color: var(--school-dark); }
+    .quick-pill.school:hover { background: var(--school); color: var(--white); }
+    .quick-pill.festival { border-color: var(--festival); color: var(--festival-dark); }
+    .quick-pill.festival:hover { background: var(--festival); color: var(--white); }
+    .quick-pill.hoa { border-color: var(--hoa); color: var(--hoa-dark); }
+    .quick-pill.hoa:hover { background: var(--hoa); color: var(--white); }
+    .quick-pill.dedicated {
+      border-color: var(--gold);
+      color: var(--gold-dark);
+      background: var(--cream);
+    }
+    .quick-pill.dedicated:hover {
+      background: var(--gold);
+      color: var(--charcoal);
+    }
+
+    /* ============================================
+       EVENT TYPE SECTIONS
+       ============================================ */
+    .event-section {
+      padding: var(--section-padding) 0;
+      position: relative;
+    }
+    .event-section.bg-white { background: var(--white); }
+    .event-section.bg-cream { background: var(--cream); }
+
+    .event-section-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .event-accent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      opacity: 0.15;
+    }
+
+    .event-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .event-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .event-header h2 {
+      margin-bottom: 0;
+    }
+
+    .event-desc {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .event-recommendation {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      border-left: 4px solid var(--gold);
+    }
+    .event-section.bg-white .event-recommendation {
+      background: var(--cream);
+    }
+    .event-recommendation h4 {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .event-recommendation p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .event-special {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .event-special-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .event-testimonial {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      position: relative;
+      margin-top: 20px;
+    }
+    .event-section.bg-white .event-testimonial {
+      background: var(--cream);
+    }
+    .event-testimonial::before {
+      content: '\201C';
+      font-family: var(--font-display);
+      font-size: 4rem;
+      opacity: 0.15;
+      position: absolute;
+      top: 4px;
+      left: 16px;
+      line-height: 1;
+    }
+    .event-testimonial p {
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--text);
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .event-testimonial .author {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-light);
+    }
+
+    /* Game cards within event sections */
+    .event-games {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .game-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px;
+      border-radius: var(--radius-md);
+      background: var(--white);
+      border: 1px solid #eee;
+      transition: all 0.3s;
+    }
+    .event-section.bg-white .game-chip {
+      background: var(--cream);
+      border-color: var(--cream-dark);
+    }
+    .game-chip:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+    .game-chip-icon {
+      font-size: 1.6rem;
+    }
+    .game-chip-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* ============================================
+       PACKAGES SECTION
+       ============================================ */
+    .packages {
+      padding: var(--section-padding) 0;
+      background: var(--charcoal);
+      color: var(--white);
+    }
+    .packages h2 { color: var(--white); }
+    .packages .section-subtitle { color: rgba(255,255,255,0.6); }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .package-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .package-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,0.2);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+    .package-card.featured {
+      border: 2px solid var(--gold);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .package-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--gold);
+      color: var(--charcoal);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .package-image {
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(212,168,67,0.15), rgba(212,168,67,0.05));
+    }
+    .package-emoji {
+      font-size: 3rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .package-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .package-body h3 {
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .game-count {
+      color: var(--gold);
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+    .package-desc {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+    .package-price {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin-bottom: 16px;
+    }
+    .package-price .from {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.4);
+    }
+    .package-price .amount {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .package-games {
+      margin-bottom: 16px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      flex: 1;
+    }
+    .package-games li {
+      padding: 3px 0;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .package-games li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .package-card .btn {
+      width: 100%;
+      background: var(--gold);
+      color: var(--charcoal);
+      border-color: var(--gold);
+    }
+    .package-card .btn:hover {
+      background: var(--gold-dark);
+      border-color: var(--gold-dark);
+    }
+
+    .pricing-note {
+      text-align: center;
+      margin-top: 28px;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.4);
+      font-style: italic;
+    }
+
+    /* ============================================
+       FINAL CTA
+       ============================================ */
+    .final-cta {
+      padding: 120px 0;
+      background: linear-gradient(150deg, #2D4A22 0%, #1B6B5A 30%, #D4A843 60%, #E07020 85%, #5C35A3 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.04) 0%, transparent 60%);
+    }
+    .final-cta .container { position: relative; z-index: 1; }
+    .final-cta h2 {
+      color: var(--white);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 16px;
+    }
+    .final-cta .lead {
+      color: rgba(255,255,255,0.8);
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+    .final-cta .sub-lead {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.95rem;
+      margin-bottom: 40px;
+    }
+    .final-cta .btn-primary { font-size: 1.15rem; padding: 18px 48px; }
+    .cta-phone {
+      margin-top: 20px;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.95rem;
+    }
+    .cta-phone a {
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .site-footer {
+      background: var(--charcoal);
+      color: rgba(255,255,255,0.7);
+      padding: 80px 0 32px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .footer-brand .footer-logo .logo-icon {
+      width: 36px;
+      height: 36px;
+      font-size: 18px;
+    }
+    .footer-brand .footer-logo .logo-text {
+      color: var(--white);
+      font-size: 1.1rem;
+    }
+    .footer-brand p {
+      margin-top: 0;
+      font-size: 0.9rem;
+      max-width: 280px;
+      line-height: 1.6;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.6);
+      transition: all 0.3s;
+    }
+    .footer-social a:hover {
+      background: var(--gold);
+      color: var(--charcoal);
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+    .footer-col a {
+      display: block;
+      padding: 4px 0;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      transition: color 0.3s;
+    }
+    .footer-col a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+    .footer-legal { display: flex; gap: 24px; }
+    .footer-legal a { color: rgba(255,255,255,0.4); transition: color 0.3s; }
+    .footer-legal a:hover { color: var(--gold); }
+
+    /* ============================================
+       SCROLL ANIMATIONS
+       ============================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 1024px) {
+      .event-section-inner { grid-template-columns: 1fr; gap: 40px; }
+      .package-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      :root { --section-padding: 64px; --nav-height: 64px; }
+
+      .nav-links, .nav-cta { display: none; }
+      .mobile-toggle { display: block; }
+
+      .package-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+
+      .event-games { grid-template-columns: 1fr 1fr; }
+
+      .quick-links-label { width: 100%; text-align: center; margin-right: 0; margin-bottom: 4px; }
+      .quick-links-inner { gap: 8px; }
+      .quick-pill { padding: 8px 16px; font-size: 0.82rem; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+      .footer-brand p { margin-left: auto; margin-right: auto; }
+      .footer-brand .footer-logo { justify-content: center; }
+      .footer-social { justify-content: center; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero-actions { flex-direction: column; width: 100%; }
+      .hero-actions .btn { width: 100%; }
+      .event-games { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar transparent" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">L</div>
+        <div class="logo-text">Legendary <span>Lawn Games</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#bars" class="nav-link">Bars &amp; Breweries</a></li>
+        <li><a href="#reunions" class="nav-link">Reunions</a></li>
+        <li><a href="#schools" class="nav-link">Schools</a></li>
+        <li><a href="#festivals" class="nav-link">Festivals</a></li>
+        <li><a href="#packages" class="nav-link">Packages</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Get a Quote</a>
+      <button class="mobile-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== MOBILE MENU ====== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="closeMobileMenu()">&times;</button>
+    <a href="#bars" onclick="closeMobileMenu()">Bars &amp; Breweries</a>
+    <a href="#reunions" onclick="closeMobileMenu()">Reunions</a>
+    <a href="#schools" onclick="closeMobileMenu()">Schools</a>
+    <a href="#festivals" onclick="closeMobileMenu()">Festivals</a>
+    <a href="#hoa" onclick="closeMobileMenu()">Block Parties</a>
+    <a href="#packages" onclick="closeMobileMenu()">Packages</a>
+    <a href="index.html">Home</a>
+    <a href="contact.html" onclick="closeMobileMenu()" style="color: var(--gold);">Get a Quote</a>
+  </div>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-shapes">
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Your Event + Our Games = Legendary Fun</div>
+      <h1>
+        <span>Games for Every <span class="gold">Occasion</span></span>
+      </h1>
+      <p class="hero-tagline">From backyard block parties to 1,000-person festivals — we bring the fun</p>
+      <div class="hero-actions">
+        <a href="#packages" class="btn btn-primary btn-large">View Packages</a>
+        <a href="contact.html" class="btn btn-outline-light btn-large">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== QUICK LINKS ====== -->
+  <section class="quick-links">
+    <div class="container">
+      <div class="quick-links-inner">
+        <span class="quick-links-label">Already know your event type?</span>
+        <a href="#bars" class="quick-pill brewery">&#127866; Bars &amp; Breweries</a>
+        <a href="#reunions" class="quick-pill reunion">&#127969; Family Reunions</a>
+        <a href="#schools" class="quick-pill school">&#127946; School &amp; Church</a>
+        <a href="#festivals" class="quick-pill festival">&#127905; Festivals &amp; Fairs</a>
+        <a href="#hoa" class="quick-pill hoa">&#127958; HOA &amp; Block Parties</a>
+        <a href="weddings.html" class="quick-pill dedicated">Weddings &rarr;</a>
+        <a href="corporate.html" class="quick-pill dedicated">Corporate &rarr;</a>
+        <a href="birthdays.html" class="quick-pill dedicated">Birthdays &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 1: BARS & BREWERIES ====== -->
+  <section class="event-section bg-white" id="bars">
+    <div class="event-accent" style="background: linear-gradient(to bottom, var(--brewery), var(--brewery-dark));"></div>
+    <div class="container">
+      <div class="event-section-inner">
+        <div class="reveal">
+          <div class="event-header">
+            <div class="event-icon" style="background: linear-gradient(135deg, #b5c8a0, #8fa87a);">&#127866;</div>
+            <h2>Bars &amp; <span style="color: var(--brewery);">Breweries</span></h2>
+          </div>
+          <p class="event-desc">Weekly game nights, tap takeovers, patio activations — lawn games keep customers longer and coming back. We work with bars and breweries on one-time events and recurring weekly/monthly setups.</p>
+
+          <div class="event-recommendation">
+            <h4>Recommended Package</h4>
+            <p>Classic (5 games) for one-time events, or a custom recurring package for weekly/monthly game nights</p>
+          </div>
+
+          <div class="event-special" style="background: rgba(143,168,122,0.1);">
+            <span class="event-special-icon">&#128176;</span>
+            <div>
+              <strong>Recurring partnerships:</strong> Book monthly and save 15%. Your regulars will love it, and your patio has never been busier.
+            </div>
+          </div>
+
+          <a href="index.html#packages" class="btn btn-event" style="background: var(--brewery);">Book for Bars &amp; Breweries</a>
+
+          <div class="event-testimonial">
+            <p>We started doing game nights every Thursday and saw a 30% increase in patio traffic. Legendary drops off, picks up, and our staff doesn't lift a finger. Best vendor partnership we've got.</p>
+            <span class="author">— Marcus T., Taproom Owner, Fort Worth TX</span>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h4 style="font-family: var(--font-body); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; margin-bottom: 16px; color: var(--text-light);">Recommended Games</h4>
+          <div class="event-games">
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127922;</span>
+              <span class="game-chip-name">Cornhole</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#129521;</span>
+              <span class="game-chip-name">Giant Jenga</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127866;</span>
+              <span class="game-chip-name">Yard Pong</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#129349;</span>
+              <span class="game-chip-name">Ladder Toss</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 2: FAMILY REUNIONS ====== -->
+  <section class="event-section bg-cream" id="reunions">
+    <div class="event-accent" style="background: linear-gradient(to bottom, var(--reunion), var(--reunion-dark));"></div>
+    <div class="container">
+      <div class="event-section-inner">
+        <div class="reveal">
+          <div class="event-header">
+            <div class="event-icon" style="background: linear-gradient(135deg, #8BC34A, #4CAF50);">&#127969;</div>
+            <h2>Family <span style="color: var(--reunion);">Reunions</span></h2>
+          </div>
+          <p class="event-desc">Games that get Uncle Rick off the lawn chair and Grandma actually laughing. Our games work for every age — toddlers to great-grandparents. We deliver to parks, backyards, ranches, wherever your family gathers.</p>
+
+          <div class="event-recommendation">
+            <h4>Recommended Package</h4>
+            <p>Legend (8 games) — the crowd favorite for reunions. Enough variety that everyone finds their game, from the competitive cousins to the chill grandparents.</p>
+          </div>
+
+          <div class="event-special" style="background: rgba(76,175,80,0.08);">
+            <span class="event-special-icon">&#128161;</span>
+            <div>
+              <strong>Pro tip:</strong> Book a multi-day rental for weekend reunions — additional days are 50% off. Set up Friday, play all weekend, we pick up Sunday.
+            </div>
+          </div>
+
+          <a href="index.html#packages" class="btn btn-event" style="background: var(--reunion);">Book for Family Reunions</a>
+        </div>
+
+        <div class="reveal">
+          <h4 style="font-family: var(--font-body); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; margin-bottom: 16px; color: var(--text-light);">Recommended Games</h4>
+          <div class="event-games">
+            <div class="game-chip">
+              <span class="game-chip-icon">&#129521;</span>
+              <span class="game-chip-name">Giant Jenga</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127922;</span>
+              <span class="game-chip-name">Cornhole</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#9917;</span>
+              <span class="game-chip-name">Bocce Ball</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127951;</span>
+              <span class="game-chip-name">Croquet</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127922;</span>
+              <span class="game-chip-name">Yardzee</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#10060;</span>
+              <span class="game-chip-name">Giant Tic-Tac-Toe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 3: SCHOOL & CHURCH ====== -->
+  <section class="event-section bg-white" id="schools">
+    <div class="event-accent" style="background: linear-gradient(to bottom, var(--school), var(--school-dark));"></div>
+    <div class="container">
+      <div class="event-section-inner">
+        <div class="reveal">
+          <div class="event-header">
+            <div class="event-icon" style="background: linear-gradient(135deg, #FF9800, #F57C00);">&#127946;</div>
+            <h2>School &amp; <span style="color: var(--school);">Church</span> Events</h2>
+          </div>
+          <p class="event-desc">Field days, fall festivals, fundraisers, VBS, youth group nights, end-of-year celebrations. Our games are safe, easy to supervise, and a massive hit with students of all ages. We handle setup and teardown so your volunteers can focus on the event.</p>
+
+          <div class="event-recommendation">
+            <h4>Recommended Package</h4>
+            <p>Classic (5 games) for smaller events, or Legend (8 games) for field days and fall festivals that need to keep hundreds of kids entertained.</p>
+          </div>
+
+          <div class="event-special" style="background: rgba(255,152,0,0.08);">
+            <span class="event-special-icon">&#127891;</span>
+            <div>
+              <strong>Nonprofit discount:</strong> 10% off for schools, churches, and registered nonprofits. Just mention it when you book.
+            </div>
+          </div>
+
+          <a href="index.html#packages" class="btn btn-event" style="background: var(--school);">Book for Schools &amp; Churches</a>
+        </div>
+
+        <div class="reveal">
+          <h4 style="font-family: var(--font-body); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; margin-bottom: 16px; color: var(--text-light);">Recommended Games</h4>
+          <div class="event-games">
+            <div class="game-chip">
+              <span class="game-chip-icon">&#128308;</span>
+              <span class="game-chip-name">Giant Connect Four</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#10060;</span>
+              <span class="game-chip-name">Giant Tic-Tac-Toe</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127921;</span>
+              <span class="game-chip-name">Ring Toss</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127922;</span>
+              <span class="game-chip-name">Cornhole</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#129349;</span>
+              <span class="game-chip-name">Ladder Toss</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 4: FESTIVALS & FAIRS ====== -->
+  <section class="event-section bg-cream" id="festivals">
+    <div class="event-accent" style="background: linear-gradient(to bottom, var(--festival), var(--festival-dark));"></div>
+    <div class="container">
+      <div class="event-section-inner">
+        <div class="reveal">
+          <div class="event-header">
+            <div class="event-icon" style="background: linear-gradient(135deg, #7E57C2, #5C35A3);">&#127905;</div>
+            <h2>Festivals &amp; <span style="color: var(--festival);">Fairs</span></h2>
+          </div>
+          <p class="event-desc">Community festivals, county fairs, food truck rallies, 5K after-parties, grand openings — we bring the games that draw crowds and keep them there. Our Festival package includes 12+ games with staffed setup for large-scale events.</p>
+
+          <div class="event-recommendation">
+            <h4>Recommended Package</h4>
+            <p>Festival ($599) — our biggest package, built for large events. Includes 12+ games, staffed setup, and teardown. We can scale to any size crowd.</p>
+          </div>
+
+          <div class="event-special" style="background: rgba(126,87,194,0.08);">
+            <span class="event-special-icon">&#127912;</span>
+            <div>
+              <strong>Custom branding:</strong> We can brand cornhole boards with your event logo. Perfect for sponsors, festivals, and grand openings.
+            </div>
+          </div>
+
+          <a href="index.html#packages" class="btn btn-event" style="background: var(--festival);">Book for Festivals</a>
+        </div>
+
+        <div class="reveal">
+          <h4 style="font-family: var(--font-body); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; margin-bottom: 16px; color: var(--text-light);">Recommended Games</h4>
+          <div class="event-games">
+            <div class="game-chip">
+              <span class="game-chip-icon">&#129521;</span>
+              <span class="game-chip-name">Giant Jenga</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127922;</span>
+              <span class="game-chip-name">Cornhole</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#128308;</span>
+              <span class="game-chip-name">Giant Connect Four</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127866;</span>
+              <span class="game-chip-name">Yard Pong</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#9917;</span>
+              <span class="game-chip-name">Bocce Ball</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127921;</span>
+              <span class="game-chip-name">Ring Toss</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127951;</span>
+              <span class="game-chip-name">Croquet</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#129349;</span>
+              <span class="game-chip-name">Ladder Toss</span>
+            </div>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-light); font-style: italic; margin-top: 8px;">Full inventory — all games included in the Festival package</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 5: HOA & BLOCK PARTIES ====== -->
+  <section class="event-section bg-white" id="hoa">
+    <div class="event-accent" style="background: linear-gradient(to bottom, var(--hoa), var(--hoa-dark));"></div>
+    <div class="container">
+      <div class="event-section-inner">
+        <div class="reveal">
+          <div class="event-header">
+            <div class="event-icon" style="background: linear-gradient(135deg, #26C6DA, #00897B);">&#127958;</div>
+            <h2>HOA &amp; <span style="color: var(--hoa);">Block Parties</span></h2>
+          </div>
+          <p class="event-desc">The easiest way to throw the best block party on the street. We deliver, set up on the cul-de-sac or common area, and pick up when it's over. HOA boards love us because we're insured, professional, and the neighbors always ask for a repeat.</p>
+
+          <div class="event-recommendation">
+            <h4>Recommended Package</h4>
+            <p>Starter ($159) for small gatherings, or Classic ($269) for full block parties with 50+ neighbors.</p>
+          </div>
+
+          <div class="event-special" style="background: rgba(0,137,123,0.08);">
+            <span class="event-special-icon">&#129297;</span>
+            <div>
+              <strong>Budget-friendly:</strong> Split the cost across households — $269 for a Classic package divided by 20 families is about $13 per family. Cheaper than a bag of ice.
+            </div>
+          </div>
+
+          <a href="index.html#packages" class="btn btn-event" style="background: var(--hoa);">Book for Block Parties</a>
+        </div>
+
+        <div class="reveal">
+          <h4 style="font-family: var(--font-body); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; margin-bottom: 16px; color: var(--text-light);">Recommended Games</h4>
+          <div class="event-games">
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127922;</span>
+              <span class="game-chip-name">Cornhole</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#129521;</span>
+              <span class="game-chip-name">Giant Jenga</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127866;</span>
+              <span class="game-chip-name">Yard Pong</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#127921;</span>
+              <span class="game-chip-name">Ring Toss</span>
+            </div>
+            <div class="game-chip">
+              <span class="game-chip-icon">&#9917;</span>
+              <span class="game-chip-name">Bocce Ball</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PACKAGES ====== -->
+  <section class="packages" id="packages">
+    <div class="container text-center">
+      <h2 class="reveal">Packages &amp; <span class="gold">Pricing</span></h2>
+      <p class="section-subtitle reveal">Bundled for value — pick the right size for your event</p>
+      <div class="package-grid">
+
+        <!-- Starter -->
+        <div class="package-card reveal">
+          <div class="package-image">
+            <span class="package-emoji">&#127922;</span>
+          </div>
+          <div class="package-body">
+            <h3>Starter</h3>
+            <div class="game-count">3 Games Included</div>
+            <p class="package-desc">Perfect for small backyard gatherings and intimate events</p>
+            <div class="package-price">
+              <span class="from">From</span>
+              <span class="amount">$159</span>
+            </div>
+            <ul class="package-games">
+              <li>Giant Jenga</li>
+              <li>Cornhole</li>
+              <li>Ladder Toss</li>
+            </ul>
+            <a href="index.html#packages" class="btn">Book Starter</a>
+          </div>
+        </div>
+
+        <!-- Classic -->
+        <div class="package-card reveal">
+          <div class="package-image">
+            <span class="package-emoji">&#127942;</span>
+          </div>
+          <div class="package-body">
+            <h3>Classic</h3>
+            <div class="game-count">5 Games Included</div>
+            <p class="package-desc">Great for HOA parties, bars, and neighborhood cookouts</p>
+            <div class="package-price">
+              <span class="from">From</span>
+              <span class="amount">$269</span>
+            </div>
+            <ul class="package-games">
+              <li>Giant Jenga</li>
+              <li>Cornhole</li>
+              <li>Giant Connect Four</li>
+              <li>Yard Pong</li>
+              <li>Ring Toss</li>
+            </ul>
+            <a href="index.html#packages" class="btn">Book Classic</a>
+          </div>
+        </div>
+
+        <!-- Legend (featured) -->
+        <div class="package-card featured reveal">
+          <div class="package-badge">Most Popular</div>
+          <div class="package-image" style="background: linear-gradient(135deg, rgba(212,168,67,0.25), rgba(212,168,67,0.1));">
+            <span class="package-emoji">&#128081;</span>
+          </div>
+          <div class="package-body">
+            <h3>Legend</h3>
+            <div class="game-count">8 Games Included</div>
+            <p class="package-desc">The ultimate package for reunions, weddings, and large celebrations</p>
+            <div class="package-price">
+              <span class="from">From</span>
+              <span class="amount">$399</span>
+            </div>
+            <ul class="package-games">
+              <li>Giant Jenga</li>
+              <li>Premium Cornhole</li>
+              <li>Giant Connect Four</li>
+              <li>Yard Pong</li>
+              <li>Bocce Ball</li>
+              <li>Croquet</li>
+              <li>Yardzee</li>
+              <li>Giant Tic-Tac-Toe</li>
+            </ul>
+            <a href="index.html#packages" class="btn">Book Legend</a>
+          </div>
+        </div>
+
+        <!-- Festival -->
+        <div class="package-card reveal">
+          <div class="package-badge">Large Events</div>
+          <div class="package-image" style="background: linear-gradient(135deg, rgba(126,87,194,0.2), rgba(92,53,163,0.1));">
+            <span class="package-emoji">&#127905;</span>
+          </div>
+          <div class="package-body">
+            <h3>Festival</h3>
+            <div class="game-count">12+ Games + Staffed Setup</div>
+            <p class="package-desc">Built for large-scale events, fairs, and community festivals</p>
+            <div class="package-price">
+              <span class="from">From</span>
+              <span class="amount">$599</span>
+            </div>
+            <ul class="package-games">
+              <li>Full game inventory</li>
+              <li>Staffed setup &amp; teardown</li>
+              <li>Custom layout planning</li>
+              <li>On-site game attendant</li>
+              <li>Logo branding available</li>
+            </ul>
+            <a href="index.html#packages" class="btn">Book Festival</a>
+          </div>
+        </div>
+
+      </div>
+      <p class="pricing-note reveal">Prices shown for Orange County. Select your location on the main site for local pricing.</p>
+    </div>
+  </section>
+
+  <!-- ====== FINAL CTA ====== -->
+  <section class="final-cta" id="final-cta">
+    <div class="container">
+      <h2 class="reveal">Don't See Your Event Type? <span class="gold">We've Got You.</span></h2>
+      <p class="lead reveal">We've set up games at gender reveals, retirement parties, pool parties, grand openings, charity galas, and tailgates. If people will be there, games should be too.</p>
+      <p class="sub-lead reveal">Tell us about your event and we'll put together the perfect game lineup.</p>
+      <a href="index.html#packages" class="btn btn-primary btn-large reveal">Book Now</a>
+      <div class="cta-phone reveal">
+        Or call us directly: <a href="tel:+19499991234">(949) 999-1234</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">L</div>
+            <div class="logo-text">Legendary <span>Lawn Games</span></div>
+          </div>
+          <p>Make your game legendary. Premium giant lawn game rentals delivered to your event in Orange County, DFW &amp; Las Vegas.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="TikTok">TK</a>
+            <a href="#" aria-label="Pinterest">PN</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Events</h4>
+          <a href="#bars">Bars &amp; Breweries</a>
+          <a href="#reunions">Family Reunions</a>
+          <a href="#schools">School &amp; Church</a>
+          <a href="#festivals">Festivals &amp; Fairs</a>
+          <a href="#hoa">HOA &amp; Block Parties</a>
+        </div>
+        <div class="footer-col">
+          <h4>Locations</h4>
+          <a href="index.html#locations">Orange County, CA</a>
+          <a href="index.html#locations">Dallas-Fort Worth, TX</a>
+          <a href="index.html#locations">Las Vegas, NV</a>
+          <a href="index.html#locations">Austin, TX</a>
+          <a href="index.html#locations">Cincinnati, OH</a>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <a href="weddings.html">Weddings</a>
+          <a href="corporate.html">Corporate Events</a>
+          <a href="birthdays.html">Birthday Parties</a>
+          <a href="index.html">All Games</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Legendary Lawn Games. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="rental-agreement.html">Rental Agreement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== JAVASCRIPT ====== -->
+  <script>
+    // Navbar scroll behavior
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+        navbar.classList.remove('transparent');
+      } else {
+        navbar.classList.remove('scrolled');
+        navbar.classList.add('transparent');
+      }
+    });
+
+    // Mobile menu
+    function openMobileMenu() {
+      document.getElementById('mobileMenu').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Scroll-reveal animations
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>

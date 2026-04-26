@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Event Game Rentals | Legendary Lawn Games</title>
+  <meta name="description" content="Team building games & corporate event rentals. Giant lawn games for company picnics, client appreciation & offsites. Custom branding available. Book now!">
+  <link rel="canonical" href="https://www.legendarylawngames.com/corporate.html">
+  <meta property="og:title" content="Corporate Event Game Rentals | Legendary Lawn Games">
+  <meta property="og:description" content="Team building games & corporate event rentals. Giant lawn games for company picnics, client appreciation & offsites. Custom branding available. Book now!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.legendarylawngames.com/corporate.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================
+       CSS CUSTOM PROPERTIES — Golden Hour Theme
+       ============================================ */
+    :root {
+      --gold: #D4A843;
+      --gold-light: #E8C96A;
+      --gold-dark: #B8912E;
+      --charcoal: #2D2D2D;
+      --charcoal-light: #3D3D3D;
+      --cream: #FFF8E7;
+      --cream-dark: #F5EDD6;
+      --sage: #8FA87A;
+      --sage-dark: #6E8A5C;
+      --white: #FFFFFF;
+      --text: #2D2D2D;
+      --text-light: #6B6B6B;
+      --text-on-dark: #F5EDD6;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+      --shadow-lg: 0 8px 40px rgba(0,0,0,0.16);
+      --shadow-gold: 0 4px 20px rgba(212,168,67,0.3);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 32px;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --nav-height: 72px;
+      --section-padding: 100px;
+    }
+
+    /* ============================================
+       RESET & BASE
+       ============================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ============================================
+       TYPOGRAPHY
+       ============================================ */
+    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.2; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px; }
+    h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto 48px;
+    }
+
+    .gold { color: var(--gold); }
+    .text-center { text-align: center; }
+
+    /* ============================================
+       BUTTONS
+       ============================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--charcoal);
+      border-color: var(--gold);
+    }
+    .btn-primary:hover {
+      background: var(--gold-dark);
+      border-color: var(--gold-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--charcoal);
+      border-color: var(--charcoal);
+    }
+    .btn-outline:hover {
+      background: var(--charcoal);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-light {
+      background: transparent;
+      color: var(--white);
+      border-color: var(--white);
+    }
+    .btn-outline-light:hover {
+      background: var(--white);
+      color: var(--charcoal);
+    }
+
+    .btn-large { padding: 18px 48px; font-size: 1.1rem; }
+
+    /* ============================================
+       NAVBAR
+       ============================================ */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--nav-height);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    .navbar.transparent {
+      background: transparent;
+    }
+    .navbar.scrolled {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-sm);
+    }
+    .navbar.scrolled .nav-link { color: var(--charcoal); }
+    .navbar.scrolled .logo-text { color: var(--charcoal); }
+    .navbar.scrolled .nav-book { background: var(--gold); color: var(--charcoal); border-color: var(--gold); }
+
+    .nav-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gold);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--charcoal);
+      font-family: var(--font-display);
+    }
+    .logo-text {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--white);
+      transition: color 0.3s;
+    }
+    .logo-text span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--white);
+      transition: color 0.3s;
+      position: relative;
+    }
+    .nav-link:hover { color: var(--gold); }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: width 0.3s;
+    }
+    .nav-link:hover::after { width: 100%; }
+
+    .nav-book {
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+      transition: all 0.3s;
+      cursor: pointer;
+      font-family: var(--font-body);
+    }
+    .nav-book:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--charcoal);
+    }
+
+    /* Mobile menu toggle */
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+    .mobile-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      margin: 6px 0;
+      transition: all 0.3s;
+    }
+    .navbar.scrolled .mobile-toggle span { background: var(--charcoal); }
+
+    /* ============================================
+       HERO SECTION — Corporate
+       ============================================ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 40%, rgba(212,168,67,0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 60%, rgba(143,168,122,0.06) 0%, transparent 40%),
+        linear-gradient(160deg, #1a1a1a 0%, #2D2D2D 35%, #1a1a2e 70%, #0f1a2e 100%);
+    }
+
+    /* Animated floating shapes */
+    .hero-shapes {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .hero-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.04;
+      animation: float 20s ease-in-out infinite;
+    }
+    .hero-shape:nth-child(1) {
+      width: 500px; height: 500px;
+      background: var(--gold);
+      top: -15%; right: -8%;
+      animation-delay: 0s;
+    }
+    .hero-shape:nth-child(2) {
+      width: 350px; height: 350px;
+      background: var(--sage);
+      bottom: -8%; left: -5%;
+      animation-delay: -7s;
+    }
+    .hero-shape:nth-child(3) {
+      width: 200px; height: 200px;
+      background: var(--gold-light);
+      top: 50%; left: 25%;
+      animation-delay: -14s;
+    }
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(30px, -30px) scale(1.05); }
+      50% { transform: translate(-20px, 20px) scale(0.95); }
+      75% { transform: translate(15px, 10px) scale(1.02); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: calc(var(--nav-height) + 60px) 24px 80px;
+      max-width: 860px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212,168,67,0.12);
+      border: 1px solid rgba(212,168,67,0.25);
+      color: var(--gold-light);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+      animation: fadeInDown 0.8s ease;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      color: var(--white);
+      margin-bottom: 20px;
+      animation: fadeInUp 0.8s ease 0.1s both;
+    }
+    .hero h1 .line { display: block; }
+
+    .hero-tagline {
+      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+      color: rgba(255,255,255,0.65);
+      max-width: 620px;
+      margin: 0 auto 44px;
+      animation: fadeInUp 0.8s ease 0.2s both;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.8s ease 0.3s both;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ============================================
+       PROOF BAR
+       ============================================ */
+    .proof-bar {
+      background: var(--charcoal);
+      padding: 20px 0;
+    }
+    .proof-bar .container {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .proof-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+    }
+    .proof-item strong {
+      color: var(--gold);
+      font-size: 1.2rem;
+    }
+    .proof-icon { font-size: 1.3rem; }
+
+    /* ============================================
+       WHY COMPANIES CHOOSE US
+       ============================================ */
+    .why-section {
+      padding: var(--section-padding) 0;
+      background: var(--white);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+    }
+
+    .benefit-card {
+      text-align: center;
+      padding: 36px 24px;
+      border-radius: var(--radius-lg);
+      border: 1px solid #eee;
+      transition: all 0.3s;
+    }
+    .benefit-card:hover {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+    .benefit-icon {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+    .benefit-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+      color: var(--charcoal);
+    }
+    .benefit-card p {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* ============================================
+       CORPORATE PACKAGES
+       ============================================ */
+    .packages {
+      padding: var(--section-padding) 0;
+      background: var(--cream);
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .package-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .package-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+    .package-card.featured {
+      border: 2px solid var(--gold);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .package-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--gold);
+      color: var(--charcoal);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .package-image {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .package-image .package-emoji {
+      font-size: 3.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .package-image.team-bg {
+      background: linear-gradient(135deg, var(--charcoal), #3a3a4a);
+    }
+    .package-image.picnic-bg {
+      background: linear-gradient(135deg, #3a4a3a, var(--sage-dark));
+    }
+    .package-image.festival-bg {
+      background: linear-gradient(135deg, #2a1a0a, var(--gold-dark));
+    }
+
+    .package-body {
+      padding: 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .package-body h3 {
+      font-size: 1.4rem;
+      margin-bottom: 4px;
+    }
+    .game-count {
+      color: var(--gold-dark);
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+    .package-desc {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .package-price {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin-bottom: 20px;
+    }
+    .package-price .from {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+    .package-price .amount {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--charcoal);
+    }
+
+    .package-games {
+      margin-bottom: 20px;
+      padding-top: 16px;
+      border-top: 1px solid #eee;
+      flex: 1;
+    }
+    .package-games li {
+      padding: 4px 0;
+      font-size: 0.9rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .package-games li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .package-card .btn { width: 100%; }
+
+    .package-note {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 0.9rem;
+      color: var(--text-light);
+      font-style: italic;
+    }
+
+    /* ============================================
+       ADD-ONS
+       ============================================ */
+    .addons {
+      padding: var(--section-padding) 0;
+      background: var(--white);
+    }
+
+    .addon-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .addon-card {
+      text-align: center;
+      padding: 32px 20px;
+      border-radius: var(--radius-lg);
+      background: var(--cream);
+      transition: all 0.3s;
+    }
+    .addon-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .addon-icon {
+      font-size: 2.5rem;
+      margin-bottom: 14px;
+    }
+    .addon-card h4 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      color: var(--charcoal);
+    }
+    .addon-card p {
+      color: var(--text-light);
+      font-size: 0.85rem;
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+    .addon-price {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+    }
+
+    /* ============================================
+       RECURRING PROGRAM
+       ============================================ */
+    .recurring {
+      padding: var(--section-padding) 0;
+      background: var(--charcoal);
+      color: var(--white);
+    }
+
+    .recurring-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      margin-top: 48px;
+    }
+
+    .recurring-content h2 {
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .recurring-content .tagline {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+    .recurring-content .discount-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212,168,67,0.15);
+      border: 1px solid rgba(212,168,67,0.3);
+      color: var(--gold-light);
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+
+    .recurring-uses h3 {
+      color: var(--gold);
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .recurring-uses ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .recurring-uses li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.8);
+    }
+    .recurring-uses li .check {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(212,168,67,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    /* ============================================
+       USE CASES
+       ============================================ */
+    .use-cases {
+      padding: var(--section-padding) 0;
+      background: var(--cream);
+    }
+
+    .use-case-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .use-case-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-end;
+      transition: transform 0.3s;
+    }
+    .use-case-card:hover { transform: scale(1.03); }
+
+    .use-case-bg {
+      position: absolute;
+      inset: 0;
+      transition: transform 0.5s;
+    }
+    .use-case-card:hover .use-case-bg { transform: scale(1.1); }
+
+    .use-case-bg.team-build { background: linear-gradient(135deg, #c5d5e0, #6a8fa8); }
+    .use-case-bg.picnic { background: linear-gradient(135deg, #b5c8a0, #8fa87a); }
+    .use-case-bg.client { background: linear-gradient(135deg, #e8d4b0, #d4a843); }
+    .use-case-bg.launch { background: linear-gradient(135deg, #c0b0d8, #8070a8); }
+    .use-case-bg.holiday { background: linear-gradient(135deg, #d4a0a0, #b86060); }
+    .use-case-bg.brewery { background: linear-gradient(135deg, #c8b080, #a08850); }
+
+    .use-case-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      font-size: 3.5rem;
+      z-index: 1;
+    }
+
+    .use-case-content {
+      position: relative;
+      z-index: 2;
+      padding: 24px;
+      width: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    }
+    .use-case-content h3 {
+      color: var(--white);
+      font-size: 1.3rem;
+      margin-bottom: 4px;
+    }
+    .use-case-content p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.85rem;
+    }
+
+    /* ============================================
+       TESTIMONIALS
+       ============================================ */
+    .testimonials {
+      padding: var(--section-padding) 0;
+      background: var(--white);
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .testimonial-card {
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: '\201C';
+      font-family: var(--font-display);
+      font-size: 5rem;
+      color: var(--gold);
+      opacity: 0.2;
+      position: absolute;
+      top: 8px;
+      left: 20px;
+      line-height: 1;
+    }
+    .testimonial-stars {
+      color: var(--gold);
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+    .testimonial-text {
+      font-size: 1.02rem;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testimonial-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--sage));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .testimonial-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .testimonial-event {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    /* ============================================
+       HOW IT WORKS
+       ============================================ */
+    .how-it-works {
+      padding: var(--section-padding) 0;
+      background: var(--cream);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 36px;
+      margin-top: 48px;
+      position: relative;
+    }
+    .steps-grid::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 12.5%;
+      right: 12.5%;
+      height: 2px;
+      background: linear-gradient(to right, var(--gold), var(--sage), var(--gold), var(--sage));
+      opacity: 0.3;
+    }
+
+    .step {
+      text-align: center;
+      position: relative;
+    }
+    .step-number {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: var(--white);
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .step h3 { margin-bottom: 8px; font-size: 1.1rem; }
+    .step p { color: var(--text-light); font-size: 0.9rem; }
+
+    /* ============================================
+       FAQ
+       ============================================ */
+    .faq {
+      padding: var(--section-padding) 0;
+      background: var(--white);
+    }
+
+    .faq-grid {
+      max-width: 800px;
+      margin: 48px auto 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 0;
+      text-align: left;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-question:hover { color: var(--gold-dark); }
+    .faq-toggle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--cream-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      transition: all 0.3s;
+    }
+    .faq-item.open .faq-toggle {
+      background: var(--gold);
+      color: var(--white);
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding-bottom: 20px;
+    }
+    .faq-answer p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* ============================================
+       FINAL CTA
+       ============================================ */
+    .final-cta {
+      padding: 120px 0;
+      background: linear-gradient(160deg, #1a1a1a 0%, #2D2D2D 35%, #1a1a2e 70%, #0f1a2e 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, rgba(212,168,67,0.06) 0%, transparent 60%);
+    }
+    .final-cta .container { position: relative; z-index: 1; }
+    .final-cta h2 {
+      color: var(--white);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 16px;
+    }
+    .final-cta p {
+      color: rgba(255,255,255,0.6);
+      font-size: 1.15rem;
+      margin-bottom: 40px;
+    }
+    .final-cta .btn-primary { font-size: 1.15rem; padding: 18px 48px; }
+    .cta-phone {
+      margin-top: 20px;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.95rem;
+    }
+    .cta-phone a {
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .site-footer {
+      background: var(--charcoal);
+      color: rgba(255,255,255,0.7);
+      padding: 80px 0 32px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand p {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      max-width: 280px;
+      line-height: 1.6;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.6);
+      transition: all 0.3s;
+    }
+    .footer-social a:hover {
+      background: var(--gold);
+      color: var(--charcoal);
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+    .footer-col a {
+      display: block;
+      padding: 4px 0;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      transition: color 0.3s;
+    }
+    .footer-col a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+    .footer-legal { display: flex; gap: 24px; }
+    .footer-legal a { color: rgba(255,255,255,0.4); transition: color 0.3s; }
+    .footer-legal a:hover { color: var(--gold); }
+
+    /* ============================================
+       MOBILE MENU OVERLAY
+       ============================================ */
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      background: var(--charcoal);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+    }
+    .mobile-menu.open { opacity: 1; visibility: visible; }
+    .mobile-menu a {
+      color: var(--white);
+      font-size: 1.5rem;
+      font-family: var(--font-display);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    /* ============================================
+       SCROLL ANIMATIONS
+       ============================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 1024px) {
+      .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+      .addon-grid { grid-template-columns: repeat(2, 1fr); }
+      .recurring-inner { grid-template-columns: 1fr; gap: 40px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      :root { --section-padding: 64px; --nav-height: 64px; }
+
+      .nav-links, .nav-book { display: none; }
+      .mobile-toggle { display: block; }
+
+      .benefits-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+      .package-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+      .addon-grid { grid-template-columns: 1fr; max-width: 340px; margin-left: auto; margin-right: auto; }
+      .use-case-grid { grid-template-columns: 1fr; }
+      .testimonial-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr; gap: 32px; }
+      .steps-grid::before { display: none; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+      .footer-brand p { margin-left: auto; margin-right: auto; }
+      .footer-social { justify-content: center; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+
+      .proof-bar .container { gap: 24px; }
+      .proof-item { font-size: 0.85rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero-actions { flex-direction: column; width: 100%; }
+      .hero-actions .btn { width: 100%; }
+      .use-case-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar transparent" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">L</div>
+        <div class="logo-text">Legendary <span>Lawn Games</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="#packages" class="nav-link">Packages</a></li>
+        <li><a href="#addons" class="nav-link">Add-Ons</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+      <a href="#contact" class="nav-book">Request a Quote</a>
+      <button class="mobile-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== MOBILE MENU ====== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="closeMobileMenu()">&times;</button>
+    <a href="index.html" onclick="closeMobileMenu()">Home</a>
+    <a href="#packages" onclick="closeMobileMenu()">Packages</a>
+    <a href="#addons" onclick="closeMobileMenu()">Add-Ons</a>
+    <a href="#how-it-works" onclick="closeMobileMenu()">How It Works</a>
+    <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+    <a href="#contact" onclick="closeMobileMenu()">Request a Quote</a>
+  </div>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-shapes">
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Corporate Events</div>
+      <h1>
+        <span class="line">Team Building That</span>
+        <span class="line">Doesn't Feel Like <span class="gold">Team Building</span></span>
+      </h1>
+      <p class="hero-tagline">Giant lawn games for corporate events, team outings, company picnics, and client appreciation days. No trust falls required.</p>
+      <div class="hero-actions">
+        <a href="#packages" class="btn btn-primary btn-large">View Corporate Packages</a>
+        <a href="#contact" class="btn btn-outline-light btn-large">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROOF BAR ====== -->
+  <div class="proof-bar">
+    <div class="container">
+      <div class="proof-item">
+        <span class="proof-icon">&#127942;</span>
+        <span><strong>500+</strong> Events Served</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-icon">&#11088;</span>
+        <span><strong>4.9</strong> Star Rating</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-icon">&#127970;</span>
+        <span><strong>150+</strong> Corporate Clients</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-icon">&#128205;</span>
+        <span><strong>5</strong> Markets Nationwide</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== WHY COMPANIES CHOOSE US ====== -->
+  <section class="why-section">
+    <div class="container text-center">
+      <h2 class="reveal">Why Companies <span class="gold">Choose Us</span></h2>
+      <p class="section-subtitle reveal">Skip the awkward icebreakers. Our games bring people together naturally.</p>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">&#127922;</div>
+          <h3>No Awkward Icebreakers</h3>
+          <p>Games do the heavy lifting. People connect naturally over Giant Jenga and cornhole — no forced "two truths and a lie."</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">&#128101;</div>
+          <h3>Works for 20 or 500</h3>
+          <p>Whether it's a small team offsite or a full company picnic, our packages scale to any group size.</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">&#127919;</div>
+          <h3>Custom Branded Boards</h3>
+          <p>Get cornhole boards wrapped with your company logo. Keep them for future events or make them a centerpiece.</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">&#128257;</div>
+          <h3>Recurring Packages</h3>
+          <p>Monthly or quarterly event programs with built-in discounts. Keep the fun consistent, not just annual.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CORPORATE PACKAGES ====== -->
+  <section class="packages" id="packages">
+    <div class="container text-center">
+      <h2 class="reveal">Corporate <span class="gold">Packages</span></h2>
+      <p class="section-subtitle reveal">Three tiers built for corporate events. All include delivery, setup, and pickup.</p>
+      <div class="package-grid">
+        <!-- Team Outing -->
+        <div class="package-card reveal">
+          <div class="package-image team-bg">
+            <span class="package-emoji">&#129309;</span>
+          </div>
+          <div class="package-body">
+            <h3>Team Outing</h3>
+            <div class="game-count">5 Games</div>
+            <div class="package-price">
+              <span class="from">from</span>
+              <span class="amount">$269</span>
+            </div>
+            <p class="package-desc">Perfect for department outings and smaller team events.</p>
+            <ul class="package-games">
+              <li>Giant Jenga</li>
+              <li>Cornhole</li>
+              <li>Giant Connect Four</li>
+              <li>Yard Pong</li>
+              <li>Ladder Toss</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Get a Quote</a>
+          </div>
+        </div>
+
+        <!-- Company Picnic — Featured -->
+        <div class="package-card featured reveal">
+          <div class="package-badge">Most Popular</div>
+          <div class="package-image picnic-bg">
+            <span class="package-emoji">&#127966;</span>
+          </div>
+          <div class="package-body">
+            <h3>Company Picnic</h3>
+            <div class="game-count">8 Games</div>
+            <div class="package-price">
+              <span class="from">from</span>
+              <span class="amount">$399</span>
+            </div>
+            <p class="package-desc">The full spread for company picnics and all-hands events.</p>
+            <ul class="package-games">
+              <li>Giant Jenga</li>
+              <li>Cornhole</li>
+              <li>Giant Connect Four</li>
+              <li>Yard Pong</li>
+              <li>Ladder Toss</li>
+              <li>Bocce Ball</li>
+              <li>Yardzee</li>
+              <li>Giant Tic-Tac-Toe</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Get a Quote</a>
+          </div>
+        </div>
+
+        <!-- Festival -->
+        <div class="package-card reveal">
+          <div class="package-badge">Full Inventory</div>
+          <div class="package-image festival-bg">
+            <span class="package-emoji">&#127881;</span>
+          </div>
+          <div class="package-body">
+            <h3>Festival</h3>
+            <div class="game-count">12+ Games</div>
+            <div class="package-price">
+              <span class="from">from</span>
+              <span class="amount">$599</span>
+            </div>
+            <p class="package-desc">Everything we have. Staffed setup and game attendant included.</p>
+            <ul class="package-games">
+              <li>Full inventory — every game</li>
+              <li>Staffed setup &amp; breakdown</li>
+              <li>Dedicated game attendant</li>
+              <li>Tournament bracket management</li>
+              <li>Custom game rotation schedule</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+      <p class="package-note reveal">Prices shown for Orange County. Volume discounts available for recurring bookings.</p>
+    </div>
+  </section>
+
+  <!-- ====== ADD-ONS ====== -->
+  <section class="addons" id="addons">
+    <div class="container text-center">
+      <h2 class="reveal">Make It <span class="gold">Yours</span></h2>
+      <p class="section-subtitle reveal">Customize your event with premium add-ons.</p>
+      <div class="addon-grid">
+        <div class="addon-card reveal">
+          <div class="addon-icon">&#127919;</div>
+          <h4>Custom Branded Cornhole</h4>
+          <p>Your logo on pro-grade cornhole boards. Keep them or return them.</p>
+          <div class="addon-price">+$150</div>
+        </div>
+        <div class="addon-card reveal">
+          <div class="addon-icon">&#127942;</div>
+          <h4>Tournament Brackets</h4>
+          <p>We organize and run a full cornhole or Jenga tournament for your team.</p>
+          <div class="addon-price">+$99</div>
+        </div>
+        <div class="addon-card reveal">
+          <div class="addon-icon">&#128161;</div>
+          <h4>LED Game Upgrade</h4>
+          <p>Glow-in-the-dark games for evening events. LED Jenga, cornhole, and more.</p>
+          <div class="addon-price">+$199</div>
+        </div>
+        <div class="addon-card reveal">
+          <div class="addon-icon">&#128587;</div>
+          <h4>Game Attendant</h4>
+          <p>A dedicated staff member to manage games, explain rules, and keep the energy up.</p>
+          <div class="addon-price">+$75/hr</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== RECURRING PROGRAM ====== -->
+  <section class="recurring" id="recurring">
+    <div class="container">
+      <div class="recurring-inner">
+        <div class="recurring-content reveal">
+          <h2>Recurring Event <span class="gold">Program</span></h2>
+          <p class="tagline">Build a culture of fun with regularly scheduled game events. No more scrambling to plan team activities every quarter.</p>
+          <div class="discount-badge">&#127775; Book quarterly and save 15%</div>
+          <br>
+          <a href="#contact" class="btn btn-primary">Start a Recurring Program</a>
+        </div>
+        <div class="recurring-uses reveal">
+          <h3>Perfect For</h3>
+          <ul>
+            <li>
+              <span class="check">&#10003;</span>
+              Monthly team building events
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              Weekly brewery or bar game nights
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              Office building amenity programs
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              Quarterly company all-hands
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              Ongoing client entertainment series
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== USE CASES ====== -->
+  <section class="use-cases">
+    <div class="container text-center">
+      <h2 class="reveal">Built for Every <span class="gold">Corporate Event</span></h2>
+      <p class="section-subtitle reveal">From team huddles to 500-person festivals, we've done it all.</p>
+      <div class="use-case-grid">
+        <div class="use-case-card reveal">
+          <div class="use-case-bg team-build"></div>
+          <span class="use-case-icon">&#129309;</span>
+          <div class="use-case-content">
+            <h3>Team Building Days</h3>
+            <p>Games that spark real conversations</p>
+          </div>
+        </div>
+        <div class="use-case-card reveal">
+          <div class="use-case-bg picnic"></div>
+          <span class="use-case-icon">&#127966;</span>
+          <div class="use-case-content">
+            <h3>Company Picnics</h3>
+            <p>The main attraction everyone remembers</p>
+          </div>
+        </div>
+        <div class="use-case-card reveal">
+          <div class="use-case-bg client"></div>
+          <span class="use-case-icon">&#129351;</span>
+          <div class="use-case-content">
+            <h3>Client Appreciation</h3>
+            <p>Impress clients with something memorable</p>
+          </div>
+        </div>
+        <div class="use-case-card reveal">
+          <div class="use-case-bg launch"></div>
+          <span class="use-case-icon">&#128640;</span>
+          <div class="use-case-content">
+            <h3>Product Launches</h3>
+            <p>Buzz-worthy games for launch parties</p>
+          </div>
+        </div>
+        <div class="use-case-card reveal">
+          <div class="use-case-bg holiday"></div>
+          <span class="use-case-icon">&#127876;</span>
+          <div class="use-case-content">
+            <h3>Holiday Parties</h3>
+            <p>Skip the karaoke. Play Giant Jenga.</p>
+          </div>
+        </div>
+        <div class="use-case-card reveal">
+          <div class="use-case-bg brewery"></div>
+          <span class="use-case-icon">&#127866;</span>
+          <div class="use-case-content">
+            <h3>Brewery &amp; Bar Partnerships</h3>
+            <p>Recurring game nights that bring crowds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="testimonials">
+    <div class="container text-center">
+      <h2 class="reveal">What Corporate <span class="gold">Clients Say</span></h2>
+      <p class="section-subtitle reveal">Real reviews from real companies.</p>
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">We booked Legendary for our Q3 all-hands and the games were the highlight of the day. Engineers who never talk to sales were trash-talking each other over cornhole. Exactly what we needed.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JM</div>
+            <div>
+              <div class="testimonial-name">Jessica M.</div>
+              <div class="testimonial-event">People Ops, SaaS Company &mdash; Irvine, CA</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">We've used them three quarters in a row now. Setup is seamless, the games are pristine, and our team actually looks forward to these events. The branded cornhole boards were a huge hit.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div>
+              <div class="testimonial-name">Ryan K.</div>
+              <div class="testimonial-event">VP of Culture, Fintech Startup &mdash; Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">We hosted a client appreciation event at a brewery and Legendary handled everything. 200+ guests, zero downtime. Multiple clients asked us for their info. Best vendor decision we made all year.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AT</div>
+            <div>
+              <div class="testimonial-name">Amanda T.</div>
+              <div class="testimonial-event">Event Director, Marketing Agency &mdash; Las Vegas, NV</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HOW IT WORKS ====== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container text-center">
+      <h2 class="reveal">How It <span class="gold">Works</span></h2>
+      <p class="section-subtitle reveal">Four steps. Zero stress. You take the credit.</p>
+      <div class="steps-grid">
+        <div class="step reveal">
+          <div class="step-number">1</div>
+          <h3>Tell Us About Your Event</h3>
+          <p>Date, headcount, venue, vibe. We'll ask the right questions.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">2</div>
+          <h3>We Recommend the Perfect Package</h3>
+          <p>Based on your group size, space, and goals, we'll build a custom plan.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">3</div>
+          <h3>We Deliver, Set Up &amp; Brief Your Team</h3>
+          <p>We arrive early, set up everything, and walk your point person through the games.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">4</div>
+          <h3>We Clean Up &mdash; You Take the Credit</h3>
+          <p>When the event wraps, we pack everything up. You look like a hero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section class="faq" id="faq">
+    <div class="container text-center">
+      <h2 class="reveal">Corporate <span class="gold">FAQ</span></h2>
+      <p class="section-subtitle reveal">Common questions from event planners and HR teams.</p>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can we get games branded with our company logo?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. Our most popular add-on is custom branded cornhole boards featuring your company logo. We use professional vinyl wraps on regulation-size boards. You can keep them after the event or we'll store them for your next booking. Turnaround is about 5 business days.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you handle setup and teardown?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, every package includes delivery, full setup, and pickup. We arrive 60-90 minutes before your event start time to arrange everything. After the event, we handle all breakdown and removal. Your team doesn't touch a thing.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What's the minimum order for corporate events?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Our Team Outing package (5 games, starting at $269) is the minimum for corporate events. For smaller groups or more casual gatherings, you can also rent individual games from our main site starting at $30 each.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you offer recurring or subscription pricing?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Book quarterly and save 15% on every event. We also offer monthly and custom cadence programs for companies that want regular team activities. Recurring clients get priority scheduling and a dedicated account contact.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can you run a cornhole tournament for us?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We love running tournaments. For $99, we'll manage the full bracket — registration, seeding, scoring, and announcing winners. We bring printed brackets, scorecards, and can even set up a leaderboard. Works great for groups of 16-64 players. We also run Giant Jenga tournaments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FINAL CTA ====== -->
+  <section class="final-cta" id="contact">
+    <div class="container">
+      <h2 class="reveal">Your Team Will Actually <span class="gold">Want</span> to Come to This One</h2>
+      <p class="reveal">No more forced fun. Just great games, real conversations, and an event people actually talk about on Monday.</p>
+      <a href="mailto:hello@legendarylawngames.com?subject=Corporate%20Event%20Inquiry" class="btn btn-primary btn-large reveal">Book Your Corporate Event</a>
+      <p class="cta-phone reveal">Or call us at <a href="tel:+19495551234">(949) 555-1234</a></p>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">L</div>
+            <div class="logo-text" style="color: var(--white);">Legendary <span>Lawn Games</span></div>
+          </a>
+          <p>Make your game legendary. Premium giant lawn game rentals delivered to your event in Orange County, DFW &amp; Las Vegas.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="TikTok">TK</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Corporate</h4>
+          <a href="#packages">Packages</a>
+          <a href="#addons">Add-Ons</a>
+          <a href="#recurring">Recurring Program</a>
+          <a href="#contact">Request a Quote</a>
+        </div>
+        <div class="footer-col">
+          <h4>Locations</h4>
+          <a href="index.html#locations">Orange County, CA</a>
+          <a href="index.html#locations">Dallas-Fort Worth, TX</a>
+          <a href="index.html#locations">Las Vegas, NV</a>
+          <a href="index.html#locations">Austin, TX</a>
+          <a href="index.html#locations">Cincinnati, OH</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="index.html">All Games</a>
+          <a href="index.html#events">Weddings</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Legendary Lawn Games. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Rental Agreement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== JAVASCRIPT ====== -->
+  <script>
+    // ---- Navbar scroll behavior ----
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        navbar.classList.remove('transparent');
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.add('transparent');
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // ---- Mobile menu ----
+    function openMobileMenu() {
+      document.getElementById('mobileMenu').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // ---- FAQ accordion ----
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    }
+
+    // ---- Scroll reveal animations ----
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ---- Smooth scroll for anchor links ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const offset = navbar.offsetHeight + 20;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

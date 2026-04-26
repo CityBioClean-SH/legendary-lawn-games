@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Legendary Lawn Games | Our Story</title>
+  <meta name="description" content="About Legendary Lawn Games — from a garage to a premium rental service across 5 metro areas. 500+ events served with a 4.9-star rating. Meet our team!">
+  <link rel="canonical" href="https://www.legendarylawngames.com/about.html">
+  <meta property="og:title" content="About Legendary Lawn Games | Our Story">
+  <meta property="og:description" content="About Legendary Lawn Games — from a garage to a premium rental service across 5 metro areas. 500+ events served with a 4.9-star rating. Meet our team!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.legendarylawngames.com/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================
+       CSS CUSTOM PROPERTIES — Golden Hour Theme
+       ============================================ */
+    :root {
+      --gold: #D4A843;
+      --gold-light: #E8C96A;
+      --gold-dark: #B8912E;
+      --charcoal: #2D2D2D;
+      --charcoal-light: #3D3D3D;
+      --cream: #FFF8E7;
+      --cream-dark: #F5EDD6;
+      --sage: #8FA87A;
+      --sage-dark: #6E8A5C;
+      --white: #FFFFFF;
+      --text: #2D2D2D;
+      --text-light: #6B6B6B;
+      --text-on-dark: #F5EDD6;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+      --shadow-lg: 0 8px 40px rgba(0,0,0,0.16);
+      --shadow-gold: 0 4px 20px rgba(212,168,67,0.3);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 32px;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --nav-height: 72px;
+      --section-padding: 100px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body); color: var(--text); background: var(--white);
+      line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.2; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px; }
+    h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+    .section-subtitle { font-size: 1.1rem; color: var(--text-light); max-width: 600px; margin: 0 auto 48px; }
+    .gold { color: var(--gold); }
+    .text-center { text-align: center; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 14px 32px; border-radius: 50px; font-family: var(--font-body);
+      font-weight: 600; font-size: 1rem; cursor: pointer; border: 2px solid transparent;
+      transition: all 0.3s ease; white-space: nowrap;
+    }
+    .btn-primary { background: var(--gold); color: var(--charcoal); border-color: var(--gold); }
+    .btn-primary:hover { background: var(--gold-dark); border-color: var(--gold-dark); transform: translateY(-2px); box-shadow: var(--shadow-gold); }
+    .btn-outline { background: transparent; color: var(--charcoal); border-color: var(--charcoal); }
+    .btn-outline:hover { background: var(--charcoal); color: var(--white); transform: translateY(-2px); }
+    .btn-outline-light { background: transparent; color: var(--white); border-color: var(--white); }
+    .btn-outline-light:hover { background: var(--white); color: var(--charcoal); }
+    .btn-large { padding: 18px 48px; font-size: 1.1rem; }
+
+    /* ============================================
+       NAVBAR (scrolled state for subpages)
+       ============================================ */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; height: var(--nav-height);
+      z-index: 1000; background: rgba(255,255,255,0.97); backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-sm); transition: all 0.3s ease;
+    }
+    .nav-inner {
+      max-width: 1300px; margin: 0 auto; padding: 0 24px; height: 100%;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-icon {
+      width: 40px; height: 40px; background: var(--gold); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; font-weight: 800; color: var(--charcoal); font-family: var(--font-display);
+    }
+    .logo-text { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: var(--charcoal); }
+    .logo-text span { color: var(--gold); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-link { font-size: 0.9rem; font-weight: 500; color: var(--charcoal); transition: color 0.3s; position: relative; }
+    .nav-link:hover { color: var(--gold); }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--gold); transition: width 0.3s; }
+    .nav-link:hover::after { width: 100%; }
+    .nav-link.active { color: var(--gold-dark); }
+    .nav-link.active::after { width: 100%; }
+    .nav-book {
+      padding: 10px 24px; border-radius: 50px; font-weight: 600; font-size: 0.9rem;
+      background: var(--gold); color: var(--charcoal); border: 2px solid var(--gold);
+      transition: all 0.3s; cursor: pointer; font-family: var(--font-body);
+    }
+    .nav-book:hover { background: var(--gold-dark); border-color: var(--gold-dark); }
+    .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .mobile-toggle span { display: block; width: 24px; height: 2px; background: var(--charcoal); margin: 6px 0; transition: all 0.3s; }
+
+    .mobile-menu {
+      position: fixed; inset: 0; background: var(--charcoal); z-index: 999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
+      opacity: 0; visibility: hidden; transition: all 0.3s;
+    }
+    .mobile-menu.open { opacity: 1; visibility: visible; }
+    .mobile-menu a { color: var(--white); font-size: 1.5rem; font-family: var(--font-display); font-weight: 600; transition: color 0.3s; }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-close { position: absolute; top: 24px; right: 24px; background: none; border: none; color: var(--white); font-size: 2rem; cursor: pointer; }
+
+    /* ============================================
+       HERO (short)
+       ============================================ */
+    .hero-short {
+      position: relative; min-height: 40vh; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); overflow: hidden;
+    }
+    .hero-short .hero-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 20% 50%, rgba(212,168,67,0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(143,168,122,0.1) 0%, transparent 50%),
+        linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+    }
+    .hero-short .hero-shapes { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .hero-shape { position: absolute; border-radius: 50%; opacity: 0.06; animation: float 20s ease-in-out infinite; }
+    .hero-shape:nth-child(1) { width: 400px; height: 400px; background: var(--gold); top: -10%; right: -5%; }
+    .hero-shape:nth-child(2) { width: 300px; height: 300px; background: var(--sage); bottom: -5%; left: -5%; animation-delay: -7s; }
+    .hero-shape:nth-child(3) { width: 200px; height: 200px; background: var(--gold-light); top: 40%; left: 20%; animation-delay: -14s; }
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(30px, -30px) scale(1.05); }
+      50% { transform: translate(-20px, 20px) scale(0.95); }
+      75% { transform: translate(15px, 10px) scale(1.02); }
+    }
+    .hero-short .hero-content {
+      position: relative; z-index: 2; text-align: center;
+      padding: calc(var(--nav-height) + 40px) 24px 60px; max-width: 800px;
+    }
+    .hero-short h1 { color: var(--white); margin-bottom: 16px; animation: fadeInUp 0.8s ease 0.1s both; }
+    .hero-short .hero-tagline {
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem); color: rgba(255,255,255,0.7);
+      max-width: 600px; margin: 0 auto; animation: fadeInUp 0.8s ease 0.2s both;
+    }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* ============================================
+       OUR STORY
+       ============================================ */
+    .our-story {
+      padding: var(--section-padding) 0; background: var(--white);
+    }
+    .story-content {
+      max-width: 760px; margin: 0 auto;
+    }
+    .story-content p {
+      font-size: 1.15rem; line-height: 1.85; color: var(--text); margin-bottom: 24px;
+    }
+    .story-content p:last-child { margin-bottom: 0; }
+    .story-lead {
+      font-size: 1.3rem !important; font-weight: 500; color: var(--charcoal) !important;
+    }
+
+    /* ============================================
+       BY THE NUMBERS
+       ============================================ */
+    .stats-section {
+      padding: 80px 0; background: var(--charcoal); color: var(--white);
+    }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
+    }
+    .stat-item { text-align: center; }
+    .stat-number {
+      font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 800; color: var(--gold); line-height: 1; margin-bottom: 8px;
+    }
+    .stat-label {
+      font-size: 1rem; color: rgba(255,255,255,0.6); font-weight: 500;
+    }
+
+    /* ============================================
+       OUR VALUES
+       ============================================ */
+    .values-section {
+      padding: var(--section-padding) 0; background: var(--cream);
+    }
+    .values-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 48px;
+    }
+    .value-card {
+      background: var(--white); border-radius: var(--radius-lg); padding: 40px 32px;
+      box-shadow: var(--shadow-sm); transition: all 0.3s; text-align: center;
+    }
+    .value-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .value-icon { font-size: 3rem; margin-bottom: 20px; }
+    .value-card h3 { margin-bottom: 12px; font-size: 1.3rem; }
+    .value-card p { color: var(--text-light); font-size: 0.95rem; line-height: 1.7; }
+
+    /* ============================================
+       MARKETS WE SERVE
+       ============================================ */
+    .markets-section {
+      padding: var(--section-padding) 0; background: var(--white);
+    }
+    .markets-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin-top: 48px;
+    }
+    .market-card {
+      border-radius: var(--radius-lg); overflow: hidden; position: relative;
+      aspect-ratio: 3/4; display: flex; align-items: flex-end; cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .market-card:hover { transform: translateY(-6px); }
+    .market-card-bg {
+      position: absolute; inset: 0; transition: transform 0.5s;
+    }
+    .market-card:hover .market-card-bg { transform: scale(1.05); }
+    .market-card-icon {
+      position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);
+      font-size: 3rem; z-index: 1;
+    }
+    .market-card-content {
+      position: relative; z-index: 2; padding: 24px; width: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    }
+    .market-card-content h3 { color: var(--white); font-size: 1.15rem; margin-bottom: 4px; }
+    .market-card-content p { color: rgba(255,255,255,0.7); font-size: 0.8rem; }
+
+    /* ============================================
+       CTA SECTION
+       ============================================ */
+    .final-cta {
+      padding: 120px 0;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .final-cta::before {
+      content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+      background: radial-gradient(ellipse at center, rgba(212,168,67,0.08) 0%, transparent 60%);
+    }
+    .final-cta .container { position: relative; z-index: 1; }
+    .final-cta h2 { color: var(--white); font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 16px; }
+    .final-cta p { color: rgba(255,255,255,0.6); font-size: 1.15rem; margin-bottom: 40px; }
+    .final-cta .btn-primary { font-size: 1.15rem; padding: 18px 48px; }
+    .cta-phone { margin-top: 20px; color: rgba(255,255,255,0.5); font-size: 0.95rem; }
+    .cta-phone a { color: var(--gold); font-weight: 600; }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .site-footer { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 80px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 60px; }
+    .footer-brand p { margin-top: 12px; font-size: 0.9rem; max-width: 280px; line-height: 1.6; }
+    .footer-shield { width: 160px; margin-bottom: 16px; }
+    .footer-shield svg { width: 100%; height: auto; }
+    .footer-social { display: flex; gap: 12px; margin-top: 20px; }
+    .footer-social a {
+      width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.08);
+      display: flex; align-items: center; justify-content: center; font-size: 0.8rem;
+      font-weight: 700; color: rgba(255,255,255,0.6); transition: all 0.3s;
+    }
+    .footer-social a:hover { background: var(--gold); color: var(--charcoal); }
+    .footer-col h4 {
+      color: var(--white); font-family: var(--font-body); font-size: 0.85rem;
+      font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 20px;
+    }
+    .footer-col a { display: block; padding: 4px 0; font-size: 0.9rem; color: rgba(255,255,255,0.6); transition: color 0.3s; }
+    .footer-col a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem;
+    }
+    .footer-legal { display: flex; gap: 24px; }
+    .footer-legal a { color: rgba(255,255,255,0.4); transition: color 0.3s; }
+    .footer-legal a:hover { color: var(--gold); }
+
+    /* Scroll Animations */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 1024px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .markets-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
+      :root { --section-padding: 64px; --nav-height: 64px; }
+      .nav-links, .nav-book { display: none; }
+      .mobile-toggle { display: block; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+      .values-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+      .markets-grid { grid-template-columns: 1fr; max-width: 300px; margin-left: auto; margin-right: auto; }
+      .market-card { aspect-ratio: 16/9; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+      .footer-brand p { margin-left: auto; margin-right: auto; }
+      .footer-social { justify-content: center; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .story-content p { font-size: 1.05rem; }
+    }
+    @media (max-width: 480px) {
+      .hero-short h1 { font-size: 2.2rem; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+      .stat-number { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">L</div>
+        <div class="logo-text">Legendary <span>Lawn Games</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#games" class="nav-link">Games</a></li>
+        <li><a href="index.html#packages" class="nav-link">Packages</a></li>
+        <li><a href="index.html#locations" class="nav-link">Locations</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="faq.html" class="nav-link">FAQ</a></li>
+      </ul>
+      <a href="index.html#book" class="nav-book">Book Now</a>
+      <button class="mobile-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="closeMobileMenu()">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="index.html#games" onclick="closeMobileMenu()">Games</a>
+    <a href="index.html#packages" onclick="closeMobileMenu()">Packages</a>
+    <a href="gallery.html" onclick="closeMobileMenu()">Gallery</a>
+    <a href="about.html" onclick="closeMobileMenu()">About</a>
+    <a href="faq.html" onclick="closeMobileMenu()">FAQ</a>
+    <a href="index.html#book" class="btn btn-primary" onclick="closeMobileMenu()">Book Now</a>
+  </div>
+
+  <!-- ====== HERO (short) ====== -->
+  <section class="hero-short">
+    <div class="hero-bg"></div>
+    <div class="hero-shapes">
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+    </div>
+    <div class="hero-content">
+      <h1>The Story Behind <span class="gold">Legendary</span></h1>
+      <p class="hero-tagline">How a love for backyard games became a business</p>
+    </div>
+  </section>
+
+  <!-- ====== OUR STORY ====== -->
+  <section class="our-story">
+    <div class="container">
+      <div class="story-content">
+        <h2 class="text-center reveal">Our Story</h2>
+        <p class="story-lead reveal">We started Legendary Lawn Games because we noticed something at every event we attended — the moment someone set up a cornhole board or a giant Jenga tower, people put down their phones, stopped standing awkwardly by the bar, and actually started having fun.</p>
+        <p class="reveal">It always seemed like the best moments at any gathering happened around the games. Not the DJ booth, not the buffet table — the games. Kids, adults, grandparents, coworkers who barely knew each other — everyone gravitated toward them. And yet, finding quality giant games to rent was surprisingly hard. Most options were beat-up, overpriced, or came with a "you pick it up, you set it up" hassle.</p>
+        <p class="reveal">What started as a few games in a garage has grown into a premium rental service across 5 metro areas. But our mission hasn't changed: make every gathering legendary.</p>
+        <p class="reveal">We deliver. We set up. We pick up. You just play. That's it. No hauling equipment in your trunk, no spending your party time assembling games, no worrying about returns. We show up early, arrange everything, and disappear. When your event is over, we come back and take it all away.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BY THE NUMBERS ====== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Events Served</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Markets</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Games Available</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">4.9&#9733;</div>
+          <div class="stat-label">Customer Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== OUR VALUES ====== -->
+  <section class="values-section">
+    <div class="container text-center">
+      <h2 class="reveal">What We Stand For</h2>
+      <p class="section-subtitle reveal">Three principles that guide everything we do</p>
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="value-icon">&#9201;</div>
+          <h3>Show Up On Time, Every Time</h3>
+          <p>Your event has a schedule, and we respect it. We arrive early, set up efficiently, and are ready before your first guest walks in. Reliability isn't a bonus — it's the baseline.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-icon">&#127942;</div>
+          <h3>Premium Quality, Fair Prices</h3>
+          <p>Every game in our fleet is meticulously maintained — sanded, stained, and inspected after every rental. You get top-shelf quality without the top-shelf price tag. Packages start at just $109.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-icon">&#129309;</div>
+          <h3>You Don't Lift a Finger</h3>
+          <p>We handle delivery, setup, and pickup — all included in the price. Your only job is to have fun. No loading trucks, no assembly instructions, no stress. That's the Legendary difference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MARKETS WE SERVE ====== -->
+  <section class="markets-section">
+    <div class="container text-center">
+      <h2 class="reveal">Markets We Serve</h2>
+      <p class="section-subtitle reveal">Five metro areas, same legendary service</p>
+      <div class="markets-grid">
+        <a href="index.html#locations" class="market-card reveal">
+          <div class="market-card-bg" style="background: linear-gradient(180deg, #87CEEB 0%, #FFD700 50%, #FF8C00 100%);"></div>
+          <div class="market-card-icon">&#127754;</div>
+          <div class="market-card-content">
+            <h3>Orange County</h3>
+            <p>California</p>
+          </div>
+        </a>
+        <a href="index.html#locations" class="market-card reveal">
+          <div class="market-card-bg" style="background: linear-gradient(180deg, #c49a6c 0%, #e8b86d 40%, #f0c040 100%);"></div>
+          <div class="market-card-icon">&#129312;</div>
+          <div class="market-card-content">
+            <h3>Dallas-Fort Worth</h3>
+            <p>Texas</p>
+          </div>
+        </a>
+        <a href="index.html#locations" class="market-card reveal">
+          <div class="market-card-bg" style="background: linear-gradient(180deg, #1a0533 0%, #6B238E 50%, #FF1493 100%);"></div>
+          <div class="market-card-icon">&#127920;</div>
+          <div class="market-card-content">
+            <h3>Las Vegas</h3>
+            <p>Nevada</p>
+          </div>
+        </a>
+        <a href="index.html#locations" class="market-card reveal">
+          <div class="market-card-bg" style="background: linear-gradient(180deg, #FF6B35 0%, #e85d26 40%, #c44d1a 100%);"></div>
+          <div class="market-card-icon">&#127924;</div>
+          <div class="market-card-content">
+            <h3>Austin</h3>
+            <p>Texas</p>
+          </div>
+        </a>
+        <a href="index.html#locations" class="market-card reveal">
+          <div class="market-card-bg" style="background: linear-gradient(180deg, #C41E3A 0%, #9B1B30 40%, #6B0F20 100%);"></div>
+          <div class="market-card-icon">&#127944;</div>
+          <div class="market-card-content">
+            <h3>Cincinnati</h3>
+            <p>Ohio</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2 class="reveal">Ready to Experience the <span class="gold">Legendary</span> Difference?</h2>
+      <p class="reveal">Free delivery and setup in all service areas. Book in under 2 minutes.</p>
+      <a href="index.html#book" class="btn btn-primary btn-large reveal">Book Your Games Now</a>
+      <p class="cta-phone reveal">or call us at <a href="tel:+18005551234">(800) 555-GAME</a></p>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-shield">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 520">
+              <defs>
+                <linearGradient id="ft-lg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#F5E8B0"/>
+                  <stop offset="40%" stop-color="#D4A843"/>
+                  <stop offset="100%" stop-color="#8B6914"/>
+                </linearGradient>
+              </defs>
+              <path d="M 40,16 L 460,16 L 460,270 C 460,400 250,510 250,510 C 250,510 40,400 40,270 Z" fill="#0e0c0a" stroke="url(#ft-lg)" stroke-width="4"/>
+              <text x="250" y="72" text-anchor="middle" font-family="'Cinzel',serif" font-weight="700" font-size="36" fill="url(#ft-lg)" letter-spacing="6">LEGENDARY</text>
+              <line x1="80" y1="88" x2="200" y2="88" stroke="#D4A843" stroke-width="0.6" opacity="0.25"/>
+              <line x1="300" y1="88" x2="420" y2="88" stroke="#D4A843" stroke-width="0.6" opacity="0.25"/>
+              <polygon points="250,84 254,88 250,92 246,88" fill="#D4A843" opacity="0.4"/>
+              <g transform="translate(175, 100)">
+                <rect x="8" y="246" width="134" height="26" rx="4" fill="#D4A843" opacity="0.9"/>
+                <rect x="12" y="218" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.85"/>
+                <rect x="6" y="190" width="134" height="26" rx="4" fill="#D4A843" opacity="0.9"/>
+                <rect x="14" y="162" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.8" transform="rotate(1.5, 81, 175)"/>
+                <rect x="4" y="134" width="134" height="26" rx="4" fill="#D4A843" opacity="0.85" transform="rotate(-2, 71, 147)"/>
+                <rect x="10" y="106" width="134" height="26" rx="4" fill="#D4A843" opacity="0.12" stroke="#D4A843" stroke-width="1" stroke-dasharray="6,5" opacity="0.3"/>
+                <rect x="16" y="78" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.7" transform="rotate(3, 83, 91)"/>
+                <rect x="4" y="50" width="134" height="26" rx="4" fill="#D4A843" opacity="0.65" transform="rotate(-2.5, 71, 63)"/>
+                <rect x="18" y="22" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.55" transform="rotate(4, 85, 35)"/>
+                <rect x="8" y="-6" width="134" height="26" rx="4" fill="#D4A843" opacity="0.45" transform="rotate(-5, 75, 7)"/>
+                <g transform="translate(120, 108) rotate(-7, 0, 12)">
+                  <rect x="0" y="0" width="88" height="22" rx="4" fill="#F5E8B0" opacity="0.75"/>
+                </g>
+              </g>
+              <text x="250" y="432" text-anchor="middle" font-family="'Cinzel',serif" font-weight="500" font-size="20" fill="#D4A843" letter-spacing="8" opacity="0.65">LAWN GAMES</text>
+            </svg>
+          </div>
+          <p>Make your game legendary. Premium giant lawn game rentals delivered to your event in Orange County, DFW & Las Vegas.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="TikTok">TK</a>
+            <a href="#" aria-label="Pinterest">PN</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Games</h4>
+          <a href="index.html#games">All Games</a>
+          <a href="index.html#packages">Packages</a>
+          <a href="index.html#packages">Custom Packages</a>
+          <a href="index.html#packages">LED / Glow Games</a>
+        </div>
+        <div class="footer-col">
+          <h4>Locations</h4>
+          <a href="index.html#locations">Orange County, CA</a>
+          <a href="index.html#locations">Dallas-Fort Worth, TX</a>
+          <a href="index.html#locations">Las Vegas, NV</a>
+          <a href="index.html#locations">Austin, TX</a>
+          <a href="index.html#locations">Cincinnati, OH</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="faq.html">FAQ</a>
+          <a href="index.html#contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Legendary Lawn Games. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Rental Agreement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---- Mobile menu ----
+    function openMobileMenu() {
+      document.getElementById('mobileMenu').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // ---- Scroll reveal animations ----
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>

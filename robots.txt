@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.legendarylawngames.com/sitemap.xml
+
+# Block design exploration files
+Disallow: /logos.html
+Disallow: /logos-v2.html
+Disallow: /logos-v3-cinematic.html
+Disallow: /logos-v4-emblems.html
+Disallow: /logos-v5-bold.html
+Disallow: /moodboard.html
+Disallow: /shield-final.html
+Disallow: /shield-final-v2.html
+Disallow: /shields.html
+Disallow: /shields-v2.html

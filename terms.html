@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | Legendary Lawn Games</title>
+  <meta name="description" content="Terms of Service for Legendary Lawn Games. Understand our rental policies, cancellation terms, and liability information.">
+  <link rel="canonical" href="https://www.legendarylawngames.com/terms.html">
+  <meta property="og:title" content="Terms of Service | Legendary Lawn Games">
+  <meta property="og:description" content="Terms of Service for Legendary Lawn Games. Understand our rental policies, cancellation terms, and liability information.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.legendarylawngames.com/terms.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #D4A843;
+      --gold-light: #E8C96A;
+      --gold-dark: #B8912E;
+      --charcoal: #2D2D2D;
+      --charcoal-light: #3D3D3D;
+      --cream: #FFF8E7;
+      --cream-dark: #F5EDD6;
+      --sage: #8FA87A;
+      --sage-dark: #6E8A5C;
+      --white: #FFFFFF;
+      --text: #2D2D2D;
+      --text-light: #6B6B6B;
+      --text-on-dark: #F5EDD6;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+      --shadow-lg: 0 8px 40px rgba(0,0,0,0.16);
+      --shadow-gold: 0 4px 20px rgba(212,168,67,0.3);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 32px;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --nav-height: 72px;
+      --section-padding: 100px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body); color: var(--text); background: var(--white);
+      line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.2; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+    h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 16px; }
+    h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+    .gold { color: var(--gold); }
+
+    /* Navbar */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; height: var(--nav-height); z-index: 1000;
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(12px); box-shadow: var(--shadow-sm);
+    }
+    .nav-inner {
+      max-width: 1300px; margin: 0 auto; padding: 0 24px;
+      height: 100%; display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-icon {
+      width: 40px; height: 40px; background: var(--gold); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; font-weight: 800; color: var(--charcoal); font-family: var(--font-display);
+    }
+    .logo-text { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: var(--charcoal); }
+    .logo-text span { color: var(--gold); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-link { font-size: 0.9rem; font-weight: 500; color: var(--charcoal); transition: color 0.3s; position: relative; }
+    .nav-link:hover { color: var(--gold); }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--gold); transition: width 0.3s; }
+    .nav-link:hover::after { width: 100%; }
+    .nav-book {
+      padding: 10px 24px; border-radius: 50px; font-weight: 600; font-size: 0.9rem;
+      background: var(--gold); color: var(--charcoal); border: 2px solid var(--gold);
+      transition: all 0.3s; cursor: pointer; font-family: var(--font-body);
+    }
+    .nav-book:hover { background: var(--gold-dark); border-color: var(--gold-dark); box-shadow: var(--shadow-gold); }
+    .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .mobile-toggle span { display: block; width: 24px; height: 2px; background: var(--charcoal); margin: 6px 0; transition: all 0.3s; }
+    .mobile-menu {
+      position: fixed; inset: 0; background: var(--charcoal); z-index: 999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
+      opacity: 0; visibility: hidden; transition: all 0.3s;
+    }
+    .mobile-menu.open { opacity: 1; visibility: visible; }
+    .mobile-menu a { color: var(--white); font-size: 1.5rem; font-family: var(--font-display); font-weight: 600; transition: color 0.3s; }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-close { position: absolute; top: 24px; right: 24px; background: none; border: none; color: var(--white); font-size: 2rem; cursor: pointer; }
+
+    /* Legal content */
+    .legal-content {
+      max-width: 800px; margin: 0 auto;
+      padding: calc(var(--nav-height) + 60px) 24px var(--section-padding);
+    }
+    .legal-content h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 8px; }
+    .legal-updated {
+      font-size: 0.9rem; color: var(--text-light);
+      margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid #eee;
+    }
+    .legal-content h2 { margin-top: 48px; margin-bottom: 16px; color: var(--charcoal); }
+    .legal-content p { font-size: 1rem; line-height: 1.8; color: var(--text); margin-bottom: 16px; }
+    .legal-content ul { list-style: disc; padding-left: 24px; margin-bottom: 16px; }
+    .legal-content ul li { font-size: 1rem; line-height: 1.8; color: var(--text); margin-bottom: 6px; }
+    .legal-content a { color: var(--gold-dark); font-weight: 500; transition: color 0.3s; }
+    .legal-content a:hover { color: var(--gold); }
+
+    /* Footer */
+    .site-footer { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 80px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 60px; }
+    .footer-brand p { margin-top: 12px; font-size: 0.9rem; max-width: 280px; line-height: 1.6; }
+    .footer-social { display: flex; gap: 12px; margin-top: 20px; }
+    .footer-social a {
+      width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.08);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; font-weight: 700; color: rgba(255,255,255,0.6); transition: all 0.3s;
+    }
+    .footer-social a:hover { background: var(--gold); color: var(--charcoal); }
+    .footer-col h4 {
+      color: var(--white); font-family: var(--font-body); font-size: 0.85rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 20px;
+    }
+    .footer-col a { display: block; padding: 4px 0; font-size: 0.9rem; color: rgba(255,255,255,0.6); transition: color 0.3s; }
+    .footer-col a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem;
+    }
+    .footer-legal { display: flex; gap: 24px; }
+    .footer-legal a { color: rgba(255,255,255,0.4); transition: color 0.3s; }
+    .footer-legal a:hover { color: var(--gold); }
+    .footer-shield { width: 160px; margin-bottom: 16px; }
+    .footer-shield svg { width: 100%; height: auto; }
+
+    @media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) {
+      :root { --section-padding: 64px; --nav-height: 64px; }
+      .nav-links, .nav-book { display: none; }
+      .mobile-toggle { display: block; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+      .footer-brand p { margin-left: auto; margin-right: auto; }
+      .footer-social { justify-content: center; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">L</div>
+        <div class="logo-text">Legendary <span>Lawn Games</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#games" class="nav-link">Games</a></li>
+        <li><a href="index.html#packages" class="nav-link">Packages</a></li>
+        <li><a href="index.html#locations" class="nav-link">Locations</a></li>
+        <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+      </ul>
+      <a href="index.html#book" class="nav-book">Book Now</a>
+      <button class="mobile-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="closeMobileMenu()">&times;</button>
+    <a href="index.html#games" onclick="closeMobileMenu()">Games</a>
+    <a href="index.html#packages" onclick="closeMobileMenu()">Packages</a>
+    <a href="index.html#locations" onclick="closeMobileMenu()">Locations</a>
+    <a href="index.html#faq" onclick="closeMobileMenu()">FAQ</a>
+    <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- ====== CONTENT ====== -->
+  <div class="legal-content">
+    <h1>Terms of <span class="gold">Service</span></h1>
+    <p class="legal-updated">Last updated: April 22, 2026</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>Welcome to Legendary Lawn Games. By accessing our website, booking our services, or renting our games, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our website or services. These Terms constitute a legally binding agreement between you and Legendary Lawn Games LLC.</p>
+
+    <h2>2. Rental Agreement</h2>
+    <p>All game rentals from Legendary Lawn Games are subject to the following conditions:</p>
+    <ul>
+      <li>Rentals are for the stated duration agreed upon at the time of booking. The standard rental period is 24 hours, beginning at the time of delivery.</li>
+      <li>All games are delivered in good, working condition. You are responsible for the games from the time of delivery until the time of pickup.</li>
+      <li>Games must be returned in the same condition as they were delivered, allowing for normal wear and tear from standard gameplay.</li>
+      <li>Extended rental periods may be available upon request and are subject to additional fees.</li>
+    </ul>
+    <p>For complete rental terms, please review our <a href="rental-agreement.html">Rental Agreement & Liability Waiver</a>.</p>
+
+    <h2>3. Booking & Payment</h2>
+    <p>Booking and payment terms are as follows:</p>
+    <ul>
+      <li>A 50% deposit is required at the time of booking to reserve your date and games. The remaining balance is due at the time of delivery.</li>
+      <li>All payments are processed securely through Stripe. We accept all major credit cards and debit cards.</li>
+      <li>A $200 pre-authorization hold will be placed on your card at the time of delivery to cover potential damage. This hold is released within 3-5 business days after your rental is returned in good condition.</li>
+      <li>Prices listed on our website are subject to change. Your booking confirmation will reflect the final agreed-upon price.</li>
+      <li>Sales tax will be applied where required by law.</li>
+    </ul>
+
+    <h2>4. Cancellation Policy</h2>
+    <p>We understand plans change. Our cancellation policy is designed to be fair:</p>
+    <ul>
+      <li><strong>More than 24 hours before your event:</strong> Free cancellation. Your deposit will be refunded in full within 5-7 business days.</li>
+      <li><strong>Within 24 hours of your event:</strong> The deposit is non-refundable, but may be applied as credit toward a future booking within 12 months.</li>
+      <li><strong>No-shows:</strong> If we arrive for delivery and no one is available to receive the games, the full rental amount will be charged.</li>
+    </ul>
+    <p>To cancel or reschedule, contact us at <a href="mailto:hello@legendarylawngames.com">hello@legendarylawngames.com</a> or call <a href="tel:+18005554263">(800) 555-GAME</a>.</p>
+
+    <h2>5. Delivery & Setup</h2>
+    <ul>
+      <li>Delivery and setup are included free of charge within our standard service areas in each market.</li>
+      <li>For locations beyond 20 miles from our local hub, a mileage fee may apply. This will be communicated at the time of booking.</li>
+      <li>Our team will deliver, set up, and later pick up all rented games at the agreed-upon times.</li>
+      <li>You must ensure that the delivery location is accessible and that someone 18 years or older is present to receive the games.</li>
+      <li>You are responsible for providing a suitable play surface. We recommend flat grass or turf areas. We will advise if your venue is not suitable for certain games.</li>
+    </ul>
+
+    <h2>6. Damage & Liability</h2>
+    <ul>
+      <li>Normal wear and tear from standard gameplay is expected and will not result in charges.</li>
+      <li>Significant damage, including but not limited to broken pieces, stained surfaces, missing components, or structural damage, will be charged to the card on file at actual repair or replacement cost.</li>
+      <li>A $200 pre-authorization hold is placed on your card at delivery to cover potential damage costs.</li>
+      <li>You are required to sign a liability waiver before or at the time of delivery. See our full <a href="rental-agreement.html">Rental Agreement & Liability Waiver</a> for details.</li>
+      <li>Legendary Lawn Games is not responsible for injuries that occur during gameplay.</li>
+    </ul>
+
+    <h2>7. Weather Policy</h2>
+    <p>We want your event to go smoothly, rain or shine:</p>
+    <ul>
+      <li>If severe weather (thunderstorms, high winds, extreme heat advisories) is forecast for your event, we will contact you to discuss options.</li>
+      <li>You may reschedule to any available date within 90 days at no additional cost.</li>
+      <li>No cancellation fees will be charged for weather-related cancellations.</li>
+      <li>Light rain generally does not affect most of our games. We will provide guidance based on specific conditions.</li>
+    </ul>
+
+    <h2>8. Assumption of Risk</h2>
+    <p>Lawn games are physical activities that involve movement, throwing, stacking, and other actions that carry inherent risk of injury. By renting games from Legendary Lawn Games, you acknowledge that:</p>
+    <ul>
+      <li>Players participate at their own risk and assume all responsibility for any injuries that may occur during gameplay.</li>
+      <li>You are responsible for supervising all players, especially children, during the rental period.</li>
+      <li>Alcohol consumption can increase the risk of injury, and you assume full responsibility for ensuring safe play.</li>
+      <li>You will follow any safety guidelines provided with the games.</li>
+    </ul>
+
+    <h2>9. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Legendary Lawn Games LLC, its owners, employees, and contractors shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of our games or services. Our total liability for any claim shall not exceed the total amount you paid for your rental.</p>
+
+    <h2>10. Intellectual Property</h2>
+    <p>All content on this website, including but not limited to the Legendary Lawn Games name, logo, shield design, photographs, text, graphics, and page layouts, is the property of Legendary Lawn Games LLC and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without prior written consent.</p>
+
+    <h2>11. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the state in which your rental service is provided. For rentals in California, California law applies. For rentals in Texas, Texas law applies. For rentals in Nevada, Nevada law applies. For rentals in Ohio, Ohio law applies. Any disputes shall be resolved in the courts of the applicable state.</p>
+
+    <h2>12. Contact Information</h2>
+    <p>If you have questions about these Terms of Service, please reach out:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:hello@legendarylawngames.com">hello@legendarylawngames.com</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+18005554263">(800) 555-GAME</a></li>
+      <li><strong>Contact Page:</strong> <a href="contact.html">legendarylawngames.com/contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-shield">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 520">
+              <defs>
+                <linearGradient id="ft-lg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#F5E8B0"/>
+                  <stop offset="40%" stop-color="#D4A843"/>
+                  <stop offset="100%" stop-color="#8B6914"/>
+                </linearGradient>
+              </defs>
+              <path d="M 40,16 L 460,16 L 460,270 C 460,400 250,510 250,510 C 250,510 40,400 40,270 Z" fill="#0e0c0a" stroke="url(#ft-lg)" stroke-width="4"/>
+              <text x="250" y="72" text-anchor="middle" font-family="'Cinzel',serif" font-weight="700" font-size="36" fill="url(#ft-lg)" letter-spacing="6">LEGENDARY</text>
+              <line x1="80" y1="88" x2="200" y2="88" stroke="#D4A843" stroke-width="0.6" opacity="0.25"/>
+              <line x1="300" y1="88" x2="420" y2="88" stroke="#D4A843" stroke-width="0.6" opacity="0.25"/>
+              <polygon points="250,84 254,88 250,92 246,88" fill="#D4A843" opacity="0.4"/>
+              <g transform="translate(175, 100)">
+                <rect x="8" y="246" width="134" height="26" rx="4" fill="#D4A843" opacity="0.9"/>
+                <rect x="12" y="218" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.85"/>
+                <rect x="6" y="190" width="134" height="26" rx="4" fill="#D4A843" opacity="0.9"/>
+                <rect x="14" y="162" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.8" transform="rotate(1.5, 81, 175)"/>
+                <rect x="4" y="134" width="134" height="26" rx="4" fill="#D4A843" opacity="0.85" transform="rotate(-2, 71, 147)"/>
+                <rect x="10" y="106" width="134" height="26" rx="4" fill="#D4A843" opacity="0.12" stroke="#D4A843" stroke-width="1" stroke-dasharray="6,5" opacity="0.3"/>
+                <rect x="16" y="78" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.7" transform="rotate(3, 83, 91)"/>
+                <rect x="4" y="50" width="134" height="26" rx="4" fill="#D4A843" opacity="0.65" transform="rotate(-2.5, 71, 63)"/>
+                <rect x="18" y="22" width="134" height="26" rx="4" fill="#E8C96A" opacity="0.55" transform="rotate(4, 85, 35)"/>
+                <rect x="8" y="-6" width="134" height="26" rx="4" fill="#D4A843" opacity="0.45" transform="rotate(-5, 75, 7)"/>
+                <g transform="translate(120, 108) rotate(-7, 0, 12)">
+                  <rect x="0" y="0" width="88" height="22" rx="4" fill="#F5E8B0" opacity="0.75"/>
+                </g>
+              </g>
+              <text x="250" y="432" text-anchor="middle" font-family="'Cinzel',serif" font-weight="500" font-size="20" fill="#D4A843" letter-spacing="8" opacity="0.65">LAWN GAMES</text>
+            </svg>
+          </div>
+          <p>Make your game legendary. Premium giant lawn game rentals delivered to your event in Orange County, DFW & Las Vegas.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="TikTok">TK</a>
+            <a href="#" aria-label="Pinterest">PN</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Games</h4>
+          <a href="index.html#games">All Games</a>
+          <a href="index.html#packages">Packages</a>
+          <a href="index.html#packages">Custom Packages</a>
+          <a href="index.html#packages">LED / Glow Games</a>
+        </div>
+        <div class="footer-col">
+          <h4>Locations</h4>
+          <a href="index.html#locations">Orange County, CA</a>
+          <a href="index.html#locations">Dallas-Fort Worth, TX</a>
+          <a href="index.html#locations">Las Vegas, NV</a>
+          <a href="index.html#locations">Austin, TX</a>
+          <a href="index.html#locations">Cincinnati, OH</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="weddings.html">Weddings</a>
+          <a href="corporate.html">Corporate Events</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Legendary Lawn Games. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="rental-agreement.html">Rental Agreement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function openMobileMenu() { document.getElementById('mobileMenu').classList.add('open'); }
+    function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+  </script>
+</body>
+</html>
