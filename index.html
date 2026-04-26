@@ -1745,7 +1745,7 @@
           <option value="bar">Bar / Brewery</option>
           <option value="other">Other</option>
         </select>
-        <button class="btn btn-primary">Check Availability</button>
+        <button class="btn btn-primary" onclick="checkAvailability()">Check Availability</button>
       </div>
     </div>
   </section>
@@ -2444,6 +2444,40 @@
     // ---- Scroll to booking widget ----
     function scrollToBooking() {
       document.getElementById('book').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // ---- Check Availability ----
+    function checkAvailability() {
+      const heroSelects = document.querySelectorAll('.hero-widget select');
+      const heroDate = document.querySelector('.hero-widget input[type="date"]');
+      const location = heroSelects[0] ? heroSelects[0].value : '';
+      const eventType = heroSelects[1] ? heroSelects[1].value : '';
+      const date = heroDate ? heroDate.value : '';
+
+      if (!location) {
+        alert('Please select a location');
+        heroSelects[0].focus();
+        return;
+      }
+      if (!date) {
+        alert('Please select your event date');
+        heroDate.focus();
+        return;
+      }
+
+      // Sync to cart
+      const cartLocation = document.getElementById('cart-location');
+      const cartDate = document.getElementById('cart-date');
+      const cartEvent = document.getElementById('cart-event-type');
+      if (cartLocation) cartLocation.value = location;
+      if (cartDate) cartDate.value = date;
+      if (cartEvent && eventType) cartEvent.value = eventType;
+
+      // Update pricing for selected location
+      if (typeof updateAllPricing === 'function') updateAllPricing(location);
+
+      // Open cart
+      openCart();
     }
 
     // ---- FAQ accordion ----
