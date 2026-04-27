@@ -2476,8 +2476,32 @@
       // Update pricing for selected location
       if (typeof updateAllPricing === 'function') updateAllPricing(location);
 
-      // Open cart
-      openCart();
+      // Format the date for display
+      const dateObj = new Date(date + 'T00:00:00');
+      const formatted = dateObj.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+      const locationName = heroSelects[0].options[heroSelects[0].selectedIndex].text;
+
+      // Show confirmation banner and scroll to packages
+      let banner = document.getElementById('availability-banner');
+      if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'availability-banner';
+        banner.style.cssText = 'background: var(--gold); color: var(--charcoal); text-align: center; padding: 14px 24px; font-weight: 600; font-size: 1rem; position: fixed; top: 0; left: 0; right: 0; z-index: 1002; font-family: var(--font-body); box-shadow: 0 2px 12px rgba(0,0,0,0.15);';
+        document.body.appendChild(banner);
+      }
+      banner.innerHTML = '&#10003; We deliver to <strong>' + locationName + '</strong> on <strong>' + formatted + '</strong> — Choose your games below!';
+      banner.style.display = 'block';
+
+      // Hide banner after 6 seconds
+      setTimeout(() => { banner.style.display = 'none'; }, 6000);
+
+      // Scroll to packages
+      const packagesEl = document.getElementById('packages');
+      if (packagesEl) {
+        const offset = navbar.offsetHeight + 60;
+        const top = packagesEl.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
     }
 
     // ---- FAQ accordion ----
