@@ -358,7 +358,7 @@
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" onclick="closeMobileMenu()">&times;</button>
+    <button class="mobile-close" onclick="closeMobileMenu()" aria-label="Close menu">&times;</button>
     <a href="index.html">Home</a>
     <a href="games.html" onclick="closeMobileMenu()">Games</a>
     <a href="packages.html" onclick="closeMobileMenu()">Packages</a>
@@ -367,6 +367,7 @@
     <a href="faq.html" onclick="closeMobileMenu()">FAQ</a>
     <a href="tel:+18556834263" style="color:var(--gold);font-size:1.2rem;font-weight:700;">(855) 683-GAME</a>
     <a href="index.html#book" class="btn btn-primary" onclick="closeMobileMenu()">Book Now</a>
+  </div>
 
   <section class="hero-short">
     <div class="hero-bg"></div>
@@ -388,31 +389,31 @@
       <p class="section-subtitle reveal">Full-service delivery, setup, and pickup in every market. You just play.</p>
       <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
         <a href="orange-county.html" class="card reveal" style="text-decoration:none;">
-          <div class="card-icon">🌴</div>
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" fill="none" stroke="#D4A843" stroke-width="2"/><circle cx="24" cy="16" r="3" fill="#D4A843"/><path d="M24 19v16" stroke="#D4A843" stroke-width="2"/></svg></div>
           <h3>Orange County, CA</h3>
           <p>Newport Beach, Irvine, Huntington Beach, Laguna Beach, Anaheim, Costa Mesa, Fullerton, and surrounding areas.</p>
           <div style="margin-top:16px;"><span class="btn btn-outline" style="font-size:0.9rem;">View Orange County →</span></div>
         </a>
         <a href="dallas-fort-worth.html" class="card reveal" style="text-decoration:none;">
-          <div class="card-icon">⛪</div>
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M24 8l-2-4M24 8l2-4" stroke="#D4A843" stroke-width="2" stroke-linecap="round"/><path d="M12 40V20l12-12 12 12v20" fill="none" stroke="#D4A843" stroke-width="2" stroke-linejoin="round"/><rect x="18" y="28" width="12" height="12" rx="1" fill="none" stroke="#D4A843" stroke-width="1.5"/><line x1="6" y1="40" x2="42" y2="40" stroke="#D4A843" stroke-width="2"/></svg></div>
           <h3>Dallas-Fort Worth, TX</h3>
           <p>Dallas, Fort Worth, Plano, Frisco, McKinney, Arlington, Irving, Denton, Grapevine, Southlake, and beyond.</p>
           <div style="margin-top:16px;"><span class="btn btn-outline" style="font-size:0.9rem;">View DFW →</span></div>
         </a>
         <a href="las-vegas.html" class="card reveal" style="text-decoration:none;">
-          <div class="card-icon">🎰</div>
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M24 4l4 12h12l-10 7 4 12-10-7-10 7 4-12L8 16h12l4-12z" fill="none" stroke="#D4A843" stroke-width="2" stroke-linejoin="round"/><circle cx="24" cy="22" r="3" fill="#D4A843" opacity="0.4"/></svg></div>
           <h3>Las Vegas, NV</h3>
           <p>Las Vegas Strip, Henderson, Summerlin, North Las Vegas, Boulder City, and the greater Las Vegas Valley.</p>
           <div style="margin-top:16px;"><span class="btn btn-outline" style="font-size:0.9rem;">View Las Vegas →</span></div>
         </a>
         <a href="austin.html" class="card reveal" style="text-decoration:none;">
-          <div class="card-icon">🎸</div>
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M18 38c0-8-4-14-4-20s4-10 10-10 10 4 10 10-4 12-4 20" fill="none" stroke="#D4A843" stroke-width="2"/><line x1="18" y1="38" x2="30" y2="38" stroke="#D4A843" stroke-width="2"/><circle cx="22" cy="18" r="2" fill="#D4A843" opacity="0.5"/></svg></div>
           <h3>Austin, TX</h3>
           <p>Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, Lakeway, Dripping Springs, and surrounding areas.</p>
           <div style="margin-top:16px;"><span class="btn btn-outline" style="font-size:0.9rem;">View Austin →</span></div>
         </a>
         <a href="cincinnati.html" class="card reveal" style="text-decoration:none;">
-          <div class="card-icon">🏟️</div>
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="24" rx="16" ry="10" fill="none" stroke="#D4A843" stroke-width="2"/><path d="M16 18c2-2 5-4 8-4s6 2 8 4" fill="none" stroke="#D4A843" stroke-width="1.5" opacity="0.6"/><path d="M16 30c2 2 5 4 8 4s6-2 8-4" fill="none" stroke="#D4A843" stroke-width="1.5" opacity="0.6"/><line x1="24" y1="14" x2="24" y2="34" stroke="#D4A843" stroke-width="1.5" opacity="0.5"/></svg></div>
           <h3>Cincinnati, OH</h3>
           <p>Cincinnati, Mason, West Chester, Blue Ash, Northern Kentucky, and the greater Cincinnati tri-state area.</p>
           <div style="margin-top:16px;"><span class="btn btn-outline" style="font-size:0.9rem;">View Cincinnati →</span></div>
@@ -479,13 +480,13 @@
               <text x="250" y="432" text-anchor="middle" font-family="'Cinzel',serif" font-weight="500" font-size="20" fill="#D4A843" letter-spacing="8" opacity="0.65">LAWN GAMES</text>
             </svg>
           </div>
-          <p>Make your game legendary. Premium giant lawn game rentals delivered to your event in Orange County, DFW & Las Vegas.</p>
+          <p>Make your game legendary. Premium giant lawn game rentals delivered to your event in Orange County, DFW, Las Vegas, Austin & Cincinnati.</p>
           <p class="footer-phone" style="margin-top:12px;"><a href="tel:+18556834263" style="color:var(--gold);font-weight:700;font-size:1rem;">(855) 683-GAME</a></p>
           <div class="footer-social">
-            <a href="#" aria-label="Instagram">IG</a>
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="TikTok">TK</a>
-            <a href="#" aria-label="Pinterest">PN</a>
+            <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="1.5" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4a4 4 0 0 1-4 4v8a5 5 0 1 1-5-5v3a2 2 0 1 0 2 2V2h4a4 4 0 0 0 3 2z"/></svg></a>
+            <a href="#" aria-label="Pinterest"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.25 2.67 7.9 6.44 9.34-.09-.78-.17-1.98.04-2.83.18-.78 1.19-5.06 1.19-5.06s-.3-.61-.3-1.51c0-1.42.82-2.47 1.85-2.47.87 0 1.29.65 1.29 1.44 0 .88-.56 2.19-.85 3.4-.24 1.02.51 1.85 1.52 1.85 1.82 0 3.22-1.92 3.22-4.69 0-2.45-1.76-4.17-4.28-4.17-2.91 0-4.62 2.18-4.62 4.44 0 .88.34 1.82.76 2.34a.3.3 0 0 1 .07.29l-.28 1.16c-.05.19-.15.23-.35.14-1.31-.61-2.13-2.52-2.13-4.06 0-3.31 2.41-6.36 6.94-6.36 3.64 0 6.48 2.6 6.48 6.07 0 3.62-2.28 6.53-5.45 6.53-1.07 0-2.07-.55-2.41-1.21l-.66 2.5c-.24.91-.88 2.06-1.31 2.75A10 10 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
           </div>
         </div>
         <div class="footer-col">
