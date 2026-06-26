@@ -127,6 +127,17 @@
     .nav-link:hover { color: var(--gold); }
     .nav-book { padding: 10px 24px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; background: var(--gold); color: var(--charcoal); border: 2px solid var(--gold); transition: all 0.3s; cursor: pointer; font-family: var(--font-body); }
     .nav-book:hover { background: var(--gold-dark); border-color: var(--gold-dark); }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown .dropdown-menu {
+      position: absolute; top: calc(100% + 12px); left: 50%;
+      transform: translateX(-50%) translateY(8px); background: var(--white);
+      border-radius: var(--radius-md); box-shadow: var(--shadow-lg);
+      padding: 12px 0; min-width: 200px; opacity: 0; visibility: hidden;
+      transition: all 0.25s ease; list-style: none;
+    }
+    .nav-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .dropdown-menu a { display: block; padding: 10px 20px; font-size: 0.9rem; color: var(--charcoal); font-weight: 500; transition: background 0.2s; }
+    .dropdown-menu a:hover { background: var(--cream); color: var(--gold-dark); }
     .nav-phone { font-size: 0.85rem; font-weight: 700; color: var(--charcoal); font-family: var(--font-body); white-space: nowrap; transition: color 0.3s; }
     .nav-phone:hover { color: var(--gold-dark); }
     .nav-phone svg { width: 14px; height: 14px; vertical-align: -2px; margin-right: 4px; fill: var(--gold); }
@@ -300,7 +311,16 @@
       <ul class="nav-links">
         <li><a href="#games" class="nav-link">Games</a></li>
         <li><a href="#packages" class="nav-link">Packages</a></li>
-        <li><a href="index.html#locations" class="nav-link">All Locations</a></li>
+        <li class="nav-dropdown">
+          <a href="locations.html" class="nav-link">Locations</a>
+          <ul class="dropdown-menu">
+            <li><a href="orange-county.html">Orange County, CA</a></li>
+            <li><a href="dallas-fort-worth.html">Dallas-Fort Worth, TX</a></li>
+            <li><a href="las-vegas.html">Las Vegas, NV</a></li>
+            <li><a href="austin.html">Austin, TX</a></li>
+            <li><a href="cincinnati.html">Cincinnati, OH</a></li>
+          </ul>
+        </li>
         <li><a href="#faq" class="nav-link">FAQ</a></li>
       </ul>
       <a href="tel:+14696467259" class="nav-phone"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>(469) 646-PLAY</a> <a href="index.html#book" class="nav-book">Book Now</a>
