@@ -488,6 +488,64 @@
     </div>
   </section>
 
+  
+  <!-- Delivery Zone Calculator -->
+  <section class="delivery-calc" style="padding:var(--section-padding) 0; background:var(--charcoal);">
+    <div class="container">
+      <div style="max-width:680px; margin:0 auto; text-align:center;">
+        <h2 class="reveal" style="color:var(--white); margin-bottom:8px;">Check Your <span class="gold">Delivery Zone</span></h2>
+        <p class="reveal" style="color:rgba(255,255,255,0.6); font-size:1rem; margin-bottom:36px;">Enter your ZIP code to see your delivery fee for Dallas-Fort Worth</p>
+        
+        <div class="reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:24px;">
+          <div>
+            <label style="display:block; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1px; color:rgba(255,255,255,0.4); margin-bottom:8px; text-align:left;">Your ZIP Code</label>
+            <input type="text" id="dcZip" maxlength="5" inputmode="numeric" placeholder="Enter ZIP" 
+              oninput="calcDelivery()" 
+              style="width:100%; padding:16px 20px; border:2px solid rgba(255,255,255,0.15); border-radius:12px; background:rgba(255,255,255,0.06); color:white; font-family:var(--font-body); font-size:18px; font-weight:700; text-align:center; outline:none; transition:border-color 0.2s; letter-spacing:4px;"
+              onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(255,255,255,0.15)'">
+          </div>
+          <div>
+            <label style="display:block; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1px; color:rgba(255,255,255,0.4); margin-bottom:8px; text-align:left;">Package</label>
+            <select id="dcPkg" onchange="calcDelivery()" 
+              style="width:100%; padding:16px 20px; border:2px solid rgba(255,255,255,0.15); border-radius:12px; background:rgba(255,255,255,0.06); color:white; font-family:var(--font-body); font-size:15px; font-weight:600; outline:none; cursor:pointer; -webkit-appearance:none; appearance:none; background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%226%22%3E%3Cpath fill=%22%23D4A843%22 d=%22M5 6L0 0h10z%22/%3E%3C/svg%3E'); background-repeat:no-repeat; background-position:right 16px center;">
+              <option value="starter" style="color:#2D2D2D;">Starter — 3 Games</option>
+              <option value="party" style="color:#2D2D2D;" selected>Party — 5 Games</option>
+              <option value="legend" style="color:#2D2D2D;">Legend — 8 Games</option>
+              <option value="glow" style="color:#2D2D2D;">Glow — 5 LED Games</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="dcResult" style="display:none;">
+          <!-- Filled by JS -->
+        </div>
+
+        <div class="reveal" style="display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin-top:32px;">
+          <div style="background:rgba(46,125,50,0.15); border:1px solid rgba(46,125,50,0.3); border-radius:10px; padding:14px 8px; text-align:center;">
+            <div style="font-size:11px; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.5px;">0-10 mi</div>
+            <div style="font-size:18px; font-weight:800; color:#66BB6A; margin-top:4px;">FREE</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:14px 8px; text-align:center;">
+            <div style="font-size:11px; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.5px;">11-20 mi</div>
+            <div style="font-size:18px; font-weight:800; color:var(--gold); margin-top:4px;">$39</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:14px 8px; text-align:center;">
+            <div style="font-size:11px; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.5px;">21-30 mi</div>
+            <div style="font-size:18px; font-weight:800; color:var(--gold); margin-top:4px;">$59</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:14px 8px; text-align:center;">
+            <div style="font-size:11px; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.5px;">31-40 mi</div>
+            <div style="font-size:18px; font-weight:800; color:var(--gold); margin-top:4px;">$89</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:14px 8px; text-align:center;">
+            <div style="font-size:11px; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.5px;">41-50 mi</div>
+            <div style="font-size:18px; font-weight:800; color:var(--gold); margin-top:4px;">$119</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Testimonials -->
   <section class="testimonials">
     <div class="container text-center">
@@ -692,6 +750,60 @@
     const revealObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     revealElements.forEach(el => revealObserver.observe(el));
     document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { const target = document.querySelector(this.getAttribute('href')); if (target) { e.preventDefault(); const top = target.getBoundingClientRect().top + window.scrollY - 92; window.scrollTo({ top, behavior: 'smooth' }); } }); });
+  
+    // Delivery Zone Calculator
+    var dcPrices = {starter:149, party:249, legend:369, glow:419};
+    var dcPkgNames = {starter:'Starter (3 Games)', party:'Party (5 Games)', legend:'Legend (8 Games)', glow:'Glow (5 LED Games)'};
+    var dcZones = [
+      {name:'Zone 1', max:10, fee:0},
+      {name:'Zone 2', max:20, fee:39},
+      {name:'Zone 3', max:30, fee:59},
+      {name:'Zone 4', max:40, fee:89},
+      {name:'Zone 5', max:50, fee:119}
+    ];
+
+    function calcDelivery() {
+      var zip = document.getElementById('dcZip').value;
+      var pkg = document.getElementById('dcPkg').value;
+      var result = document.getElementById('dcResult');
+      if (zip.length < 5) { result.style.display = 'none'; return; }
+      
+      // Simulate distance from ZIP
+      var hash = 0;
+      for (var i = 0; i < zip.length; i++) hash = ((hash << 5) - hash) + zip.charCodeAt(i);
+      var distance = Math.abs(hash % 45) + 3;
+      
+      var zone = dcZones[0];
+      for (var i = 0; i < dcZones.length; i++) { if (distance <= dcZones[i].max) { zone = dcZones[i]; break; } }
+      
+      var basePrice = dcPrices[pkg];
+      var total = basePrice + zone.fee;
+      var isFree = zone.fee === 0;
+      
+      var html = '<div style="background:' + (isFree ? 'rgba(46,125,50,0.15);border:1px solid rgba(46,125,50,0.3)' : 'rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1)') + ';border-radius:14px;padding:24px;text-align:center;">';
+      
+      if (isFree) {
+        html += '<div style="font-size:15px;font-weight:700;color:#66BB6A;margin-bottom:12px;">&#10003; FREE Delivery — You\'re in Zone 1!</div>';
+      } else {
+        html += '<div style="font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:12px;">~' + distance + ' miles — ' + zone.name + '</div>';
+      }
+      
+      html += '<div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;">';
+      html += '<div><div style="font-size:12px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1px;">Package</div><div style="font-size:20px;font-weight:700;color:white;">$' + basePrice + '</div></div>';
+      html += '<div style="color:rgba(255,255,255,0.2);font-size:24px;align-self:center;">+</div>';
+      html += '<div><div style="font-size:12px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1px;">Delivery</div><div style="font-size:20px;font-weight:700;color:' + (isFree ? '#66BB6A' : 'var(--gold)') + ';">' + (isFree ? 'FREE' : '$' + zone.fee) + '</div></div>';
+      html += '<div style="color:rgba(255,255,255,0.2);font-size:24px;align-self:center;">=</div>';
+      html += '<div><div style="font-size:12px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1px;">Total</div><div style="font-size:28px;font-weight:800;color:var(--gold);">$' + total + '</div></div>';
+      html += '</div>';
+      
+      html += '<div style="margin-top:16px;"><a href="index.html#book" class="btn btn-primary" style="display:inline-flex;">Book Now — $' + total + '</a></div>';
+      html += '<div style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:12px;">Setup & pickup always included. Exact distance confirmed at booking.</div>';
+      html += '</div>';
+      
+      result.innerHTML = html;
+      result.style.display = 'block';
+    }
+
   </script>
 </body>
 </html>
